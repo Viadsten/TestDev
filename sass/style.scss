@@ -1,18 +1,22 @@
 @import "blocks/navigation.scss";
-@import "variables.scss";
-@import "blocks/statistic.scss";
+@import "blocks/main-header.scss";
+@import "blocks/categories.scss";
+@import "blocks/sale.scss";
+@import "blocks/best.scss";
 @import "blocks/advantages.scss";
-@import "blocks/news.scss";
-@import "blocks/review.scss";
+@import "blocks/footer.scss";
+@import "mixins.scss";
 
 
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'PT Sans Narrow';
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
 }
 
 .page{
-  display: grid;
+  background-color: #fff;
+  color: #313131;
 }

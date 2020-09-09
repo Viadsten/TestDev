@@ -1,32 +1,28 @@
 @import "../variables.scss";
 
-.header{
-  background-color: #242424;
-}
-
 .header__logo{
-  height: 85px;
-  text-align: center;
-  padding-top: 29px;
-}
-
-.header__nav{
-  text-align: center;
-  background-color: #826550;
+  padding-left: 20px;
+  padding-top: 10px;
+  margin-bottom: 10px;
+  &:hover{
+    opacity: 0.6;
+  }
+  &:active{
+      opacity: 0.3;
+    
+  }
 }
 
 .header__toggle{
   width: 70px;
-  height: 48px;
-  background-color: #6a4d38;
+  height: 45px;
   border: none;
   position: absolute;
   right: 0;
-  padding-left: 18px;
+  background-color: #fff;
+  padding-left: 20px;
   cursor: pointer;
-  &:hover{
-    background-color: #624530;
-  }
+
   &:active{
     span{
       opacity: 0.3;
@@ -40,7 +36,7 @@
   width: 36px;
   height: 1.5px;
   transition: .3s all linear;
-  background-color: white;
+  background-color: rgb(59, 59, 59);
 }
 
 .toggle__line_first{
@@ -52,20 +48,20 @@
 }
 
 .toggle_active .toggle__line_second{
-  transform: translateX(18px) rotateZ(315deg);
-  width: 0px;
-  opacity: 0;
+  transform: translateX(0px) rotateZ(45deg);
+  width: 34px;
+  opacity: 0.1;
 }
 .toggle_active .toggle__line_first{
   width: 34px;
-  transform: translateY(9px) rotate(45deg);
+  transform: translateY(8px) rotate(45deg);
 }
 .toggle_active .toggle__line_third{
   width: 34px;
-  transform: translateY(-9px) rotate(-45deg);
+  transform: translateY(-8px) rotate(-45deg);
 }
 
-.header__nav{
+.header__nav, .header__nav-links{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -77,87 +73,106 @@
   justify-content: space-between;
 }
 
+.header__link-wrapper--first{
+  border-top: solid 0.5px #bbbbbb;
+}
+
 .header__link-wrapper{
   transition: .3s all ease-in-out;
-  border-top: solid 1px #886e5b;
-  border-bottom: solid 1px #71543f;
+  border-bottom: solid 0.5px #bbbbbb;
   height: 48px;
+  text-align: center;
   padding-top: 12px;
   text-decoration: none;
-  color: white;
-  text-transform: uppercase;
+  color: #313131;
   font-size: 18px;
   line-height: 24px;
   font-weight: 400;
   &:hover{
-    border-top: solid 1px #755a46;
-    background-color: #755a46;
+    opacity: 0.6;
   }
   &:active{
-    span{
       opacity: 0.3;
-    }
+    
   }
 }
 
 .header__login{
+  width: 100%;
   height: 50px;
   border: none;
-  background-color: #6a4d38;
-  fill: #978374;
+  border-bottom: solid 0.5px #bbbbbb;
+  background-color: #fff;
   color: white;
   font-size: 18px;
   line-height: 24px;
   display: flex;
+  color: #313131;
   justify-content: center;
   align-items: center;
-  padding-right: 13px;
-  svg{
+  padding-right: 25px;
+  img{
     margin-right: 13px;
   }
   &:hover{
-    background-color: #624530;
-    svg{
-      fill: white;
-    }
+    opacity: 0.6;
   }
   &:active{
       opacity: 0.3;
-      svg{
-        fill: white;
-      }
   }
 }
 
-@media (min-width: $tablet-width){
+.header__user-nav{
+  width: 100%;
+  align-items: center;
+}
+
+.header__login--basket{
+  padding-right: 13px;
+  img{
+    margin-right: 12px;
+  }
+}
+
+.header__basket-push{
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #F73A3A;
+  font-size: 10px;
+  text-align: center;
+  line-height: 12px;
+  margin-left: -20px;
+  margin-top: -10px;
+  margin-right: 12px;
+}
+
+@media (min-width: 540px){
   .header{
     display: flex;
     flex-direction: column;
-    background-color: #000;
-    background-image: url("../img/back-tablet.jpg");
-    background-size: cover;
-    height: 720px;
+    max-height: 55px;
+    max-width: 1440px;
+    margin: 0 auto;
   }
 
   .header__logo{
-    padding-top: 40px;
-    order: 2;
-    height: 398px;
+    padding-left: 0;
+    padding-top: 0;
+    margin-bottom: 0;
   }
 
   .header__logo-image{
-    width: 370px;
-    height: 101px;
+    width: 71px;
+    height: 47px;
   }
 
   .header__nav{
-    margin: 0 auto;
-    width: 100%;
-    padding: 0 8.25% 0 8.25%;
+    padding: 0 20px 0 20px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    background-color: black;
+    justify-content: flex-start;
+    align-items: center;
   }
 
   .header__toggle{
@@ -165,94 +180,78 @@
   }
 
   .header__nav-wrapper{
+    width: 100%;
+    margin-left: 45px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 85%;
   }
 
   .header__link-wrapper{
     border: none;
-    height: 72px;
-    width: 100%;
-    padding-top: 24px;
-    font-weight: bold;
-    &:hover{
-      border: none;
-      background-color: white;
-      color: black;
+    font-size: 19px;
+    line-height: 28px;
+  }
+
+  .header__login--basket, .header__login{
+    padding-right: 0;
+    img{
+      margin-right: 0;
     }
   }
 
-  .header__current-nav{
-    width: 15%;
-    border-bottom: solid 3px #826550;
+  .header__user-nav{
+    display: flex;
+    justify-content: space-between;
+    width: 140px;
+  }
+
+  .header__nav-links{
+    flex-direction: row;
+    justify-content: space-between;
+    width: 60%;
+    max-width: 275px;
   }
 
   .header__login{
     height: 50px;
     border: none;
-    background-color: #000;
     font-size: 0px;
     line-height: 0px;
-    padding-top: 24px;
-    margin-left: 20px;
-    svg{
-      fill: #4d4d4d;
-    }
-    &:hover{
-      background-color: black;
-      svg{
-        fill: #826550;
-      }
-    }
-    &:active{
-      background-color: black;
-      opacity: 1;
-      svg{
-        fill: #4d4d4d;
-      }
-    }
+  }
+
+  .login-icon{
+    width: 27px;
+    height: 27px;
+  }
+
+  .basket-icon{
+    width: 30px;
+    height: 30px;
+  }
+
+  .search-icon{
+    width: 31px;
+    height: 27px;
+  }
+
+  .header__basket-push{
+    width: 14px;
+    height: 14px;
+    font-size: 12px;
+    line-height: 12px;
+    margin-left: -12px;
+    margin-top: -10px;
+    margin-right: 0px;
+  
   }
 }
 
-@media (min-width: $desktop-width){
-  .header-logo{
-    padding-top: 60px;
+@media (min-width: 1080px){
+  .header{
+    padding-left: 50px;
+    padding-right: 50px;
   }
 
-  .header__logo-image{
-    width: 370px;
-    height: 153px;
-  }
-
-  .header__current-nav{
-    width: 15%;
-    border-bottom: solid 3px #826550;
-  }
-
-  .header__nav-wrapper{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-    margin-right: auto;
-  }
-
-  .header__login{
-    margin-left: 8%;
-    font-size: 18px;
-    line-height: 24px;
-    height: 72px;
-    padding-top: 0;
-    font-weight: bold;
-    width: 80%;
-  &:hover{
-    background-color: white;
-    color: black;
-    svg{
-      fill: #b2b2b2;
-    }
-  }
-  }
+  
 }
