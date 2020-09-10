@@ -199,7 +199,8 @@
   .header__link-wrapper {
     border: none;
     font-size: 19px;
-    line-height: 28px; }
+    line-height: 28px;
+    font-weight: 400; }
   .header__login--basket, .header__login {
     padding-right: 0; }
     .header__login--basket img, .header__login img {
