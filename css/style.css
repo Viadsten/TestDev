@@ -24,7 +24,7 @@
   display: block;
   position: absolute;
   width: 36px;
-  height: 1.5px;
+  height: 2px;
   -webkit-transition: .3s all linear;
   -o-transition: .3s all linear;
   transition: .3s all linear;
