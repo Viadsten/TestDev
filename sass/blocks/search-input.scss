@@ -1,0 +1,21 @@
+.search-input--mobile{
+    width: calc(100% - 20px);
+    margin: 10px;
+    height: 49px;
+    border-radius: 10px;
+    background: linear-gradient(91.07deg, #FFFFFF 19.2%, #F7F7F7 93.9%);
+    box-shadow: inset 15px 15px 32px rgba(241, 241, 241, 0.61);
+    border: 2px solid #F0F0F0;
+    padding-left: 15px;
+    background-image: url('../img/search-icon.svg');
+    background-repeat: no-repeat;
+    background-position: center ;
+    background-position-x: 95%;
+    outline: none;
+}
+
+@media(min-width:720px){
+    .search-input--mobile{
+        display: none;
+    }
+}
