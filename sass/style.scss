@@ -11,6 +11,7 @@
 @import "blocks/index/banner.scss";
 @import "blocks/index/sale.scss";
 @import "blocks/index/about.scss";
+@import "blocks/category/category.scss";
 
 *{
   margin: 0;
@@ -75,6 +76,32 @@
  }
 }
 
+.breadcrumb{
+  max-width: 1260px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fff !important;
+  .breadcrumb-item a{
+    color: rgba(49, 49, 49, 0.8);
+    &:hover{
+      color: rgba(49, 49, 49, 0.8);
+    }
+  }
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  content: '>' !important;
+  padding-right: 4px !important;
+}
+
+.breadcrumb-item + .breadcrumb-item {
+  padding-left: 4px !important;
+}
+
+.breadcrumb-item.active {
+  color: #FB565D !important;
+}
+
 .header-banner-btn{
   transition: .2s ease-out;
   &:hover{
@@ -85,6 +112,7 @@
     font-weight: 500;
   }
 }
+
 
 @media(max-width: 720px){
   .header-banner-btn{
