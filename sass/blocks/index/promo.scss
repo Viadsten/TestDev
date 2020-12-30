@@ -51,9 +51,7 @@ input[type=checkbox] {
     transition: all 0.5s ease;
   }
   .promo-check-input:checked + label:before{
-    animation: animationBounce 0.5s 1;
-
-    transition: all 0.5s ease;
+    animation: animationBounce 0.5s;
     background-image: url('../img/check.svg');
     background-repeat: no-repeat;
     background-position: center center;
@@ -115,8 +113,11 @@ input[type=checkbox] {
     border: none;
     color: #fff;
     margin: 30px auto 0;
-    line-height: 55px;
+    line-height: 50px;
     font-weight: 400;
+    &:disabled{
+        opacity: 0.6;
+    }
 }
 
 @media(min-width:768px){

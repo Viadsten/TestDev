@@ -999,11 +999,8 @@ input[type=checkbox] {
   transition: all 0.5s ease; }
 
 .promo-check-input:checked + label:before {
-  -webkit-animation: animationBounce 0.5s 1;
-          animation: animationBounce 0.5s 1;
-  -webkit-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+  -webkit-animation: animationBounce 0.5s;
+          animation: animationBounce 0.5s;
   background-image: url("../img/check.svg");
   background-repeat: no-repeat;
   background-position: center center; }
@@ -1062,8 +1059,10 @@ input[type=checkbox] {
   border: none;
   color: #fff;
   margin: 30px auto 0;
-  line-height: 55px;
+  line-height: 50px;
   font-weight: 400; }
+  .promo-button:disabled {
+    opacity: 0.6; }
 
 @media (min-width: 768px) {
   .promo-left {
@@ -1379,3 +1378,7 @@ input[type=checkbox] {
     border: 1px solid #fff;
     background-color: #FB565D;
     font-weight: 500; }
+
+@media (max-width: 720px) {
+  .header-banner-btn:hover {
+    line-height: 38px; } }

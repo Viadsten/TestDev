@@ -50,3 +50,15 @@ $(function() {
   burgerBtn.onclick = function(){
       burgerBtn.classList.toggle('toggler-open');
   }
+/*
+  var promoBtn = document.querySelector('.promo-button');
+  var promoCheck = document.querySelector('.promo-check-input');
+
+  if (promoCheck.checked = true){
+    promoBtn.disabled = false;
+    console.log('1')
+  }else{
+    promoBtn.disabled = true;
+
+  }*/
+ 

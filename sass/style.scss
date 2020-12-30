@@ -85,3 +85,11 @@
     font-weight: 500;
   }
 }
+
+@media(max-width: 720px){
+  .header-banner-btn{
+    &:hover{
+      line-height: 38px;
+    }
+  }
+}
