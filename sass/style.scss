@@ -1,10 +1,16 @@
 @import "blocks/header.scss";
-@import "blocks/index/index-banner.scss";
+@import "blocks/header-desktop.scss";
 @import "blocks/footer.scss";
 @import "blocks/search-input.scss";
 @import "blocks/category.scss";
 @import "mixins.scss";
-
+@import "blocks/index/index-banner.scss";
+@import "blocks/index/advantages.scss";
+@import "blocks/index/popular-product.scss";
+@import "blocks/index/promo.scss";
+@import "blocks/index/banner.scss";
+@import "blocks/index/sale.scss";
+@import "blocks/index/about.scss";
 
 *{
   margin: 0;
@@ -19,3 +25,48 @@
   color: #313131;
 }
 
+.h2-center{
+  text-align: center;
+  font-size: 25px;
+  line-height: 25px;
+  font-weight: 600;
+}
+
+.h2-left{
+  text-align: left;
+  font-size: 25px;
+  line-height: 25px;
+  font-weight: 600;
+  color: #FB565D;
+}
+
+
+@media(min-width: 768px){
+  .h2-center{
+    font-size: 30px;
+    line-height: 30px;
+  }
+  .h2-left{
+    font-size: 30px;
+    line-height: 30px;
+  }
+}
+
+.input{
+  height: 49px;
+  border-radius: 10px;
+  background: linear-gradient(91.07deg, #FFFFFF 19.2%, #F7F7F7 93.9%);
+  box-shadow: inset 15px 15px 32px rgba(241, 241, 241, 0.61);
+  border: 2px solid #F0F0F0;
+  padding-left: 15px;
+  outline: none;
+
+}
+
+.transform-3d{
+  
+}
+
+.button-red{
+ 
+}

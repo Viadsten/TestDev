@@ -13,74 +13,356 @@
 
     <title>SEX SHOP</title>
   </head>
+  <svg style="display: none;">
+    <symbol viewBox="0 0 16 16" id="favorite-icon">
+      <path class="st0" d="M15.6,3.3c-0.2-0.6-0.6-1.2-1.1-1.7c-0.4-0.5-1-0.9-1.6-1.1C12.4,0.1,11.8,0,11.1,0c-0.9,0-1.8,0.3-2.6,0.8
+      C8.3,0.9,8.2,1.1,8,1.2C7.8,1.1,7.7,0.9,7.5,0.8C6.7,0.3,5.8,0,4.9,0C4.2,0,3.6,0.1,3,0.4C2.4,0.7,1.9,1.1,1.4,1.6
+      C1,2.1,0.6,2.6,0.4,3.3C0.1,3.9,0,4.7,0,5.4c0,0.7,0.1,1.4,0.4,2.1c0.2,0.6,0.5,1.2,0.9,1.9c0.6,1,1.4,2.1,2.5,3.1
+      c1.7,1.8,3.4,3,3.5,3l0.4,0.3c0.2,0.1,0.4,0.1,0.6,0l0.4-0.3c0.1-0.1,1.8-1.3,3.5-3c1-1.1,1.9-2.1,2.5-3.1c0.4-0.6,0.7-1.3,0.9-1.9
+      C15.9,6.8,16,6.1,16,5.4C16,4.7,15.9,3.9,15.6,3.3z"/>
+      <path class="st1" d="M8,14.3c0,0-6.6-4.7-6.6-8.9c0-2.1,1.6-3.8,3.5-3.8c1.4,0,2.5,0.8,3.1,2.1c0.6-1.2,1.8-2.1,3.1-2.1
+      c1.9,0,3.5,1.7,3.5,3.8C14.6,9.5,8,14.3,8,14.3z"/>
+    </symbol>
+
+  </svg>
   <body>
-    <!--
-    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+    <nav class="navbar navbar-expand-lg">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-        <span class="navbar-toggler-icon"></span>
+        <span class="burger-line burger-line--1"></span>
+        <span class="burger-line burger-line--2"></span>
+        <span class="burger-line burger-line--3"></span>
       </button>
       <div class="d-flex justify-content-between mobile-user-bar">
-        <button class="nav-buttons basket-btn" type="button"><img src="img/basket-icon.svg" alt="basket-icon"><span>10</span></button>
-        <button class="nav-buttons favorite-btn" type="button"><img src="img/favorite-icon.svg" alt="basket-icon"><span>10</span></button>
+        <button class="nav-buttons btn-notification basket-btn" type="button"><img src="img/basket-icon.svg" alt="basket-icon"><span>10</span></button>
+        <button class="nav-buttons btn-notification favorite-btn" type="button"><img src="img/favorite-icon.svg" alt="basket-icon"><span>10</span></button>
         <button class="nav-buttons user-btn" type="button"><img src="img/user-icon.svg" alt="basket-icon"></button>
-        <a class="nav-buttons tel-btn"><img src="img/basket-icon.svg" alt="tel-icon"></a>
+        <a class="nav-buttons tel-btn"><img src="img/tel-icon.svg" alt="tel-icon"></a>
       </div>
       <a class="navbar-brand" href="#">LOGO</a> 
+      <input type="search" class="search-input--mobile" placeholder="Поиск">
       <div class="collapse navbar-collapse" id="collapsibleNavbar">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="#">8 (800) 000-00-00 <span>Бесплатный звонок</span></a>
+        <ul class="navbar-nav nav-list--desktop">
+          <li class="nav-item nav-item--desktop">
+            <a class="nav-link nav-link--tel" href="#">8 (800) 000-00-00 <span>Бесплатный звонок</span></a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">8 (800) 000-00-00 <span>с 09:00 до 21:00</span></a>
+          <li class="nav-item nav-item--desktop">
+            <a class="nav-link nav-link--tel" href="#">8 (800) 000-00-00 <span>с 09:00 до 21:00</span></a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item nav-item-1strow">
             <a class="nav-link" href="#">Доставка</a>
-          </li> 
-          <li class="nav-item">
             <a class="nav-link" href="#">Оплата</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Доставка</a>
-          </li>   
+          <li class="social-wrp">
+              <a class="nav-link" href="#"><img src="img/whats-up.svg"></a>
+              <a class="nav-link" href="#"><img src="img/tg.svg"></a>
+              <a class="nav-link" href="#"><img src="img/insta.svg"></a>
+          </li>
+
         </ul>
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="#">Для нее</a>
+        <ul class="navbar-nav nav-list--2">
+          <li class="nav-item dropdown-menu-hover" id="dropdownEvent">
+            <a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle">Для нее</a>
+            <ul class="dropdown-menu dropright dropdown-menu-show">
+              <li class="dropdown-submenu">
+                <a href="#" role="button" data-toggle="dropdown" class="dropdown-item dropdown-toggle">Анальные стимуляторы</a>
+                <ul class="dropdown-menu  dropdown-submenu-1">
+                  <!--<li><a href="#" class="dropdown-item">level 2</a></li>-->
+                  <li class="dropdown-submenu">
+                    <a href="#" role="button" data-toggle="dropdown" class="dropdown-item dropdown-toggle">Анальные стимуляторы</a>
+                    <ul class="dropdown-menu dropdown-submenu-2">
+                      <li><a href="#" class="dropdown-item">level 3</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="dropdown-submenu">
+                <a href="#" role="button" data-toggle="dropdown" class="dropdown-item dropdown-toggle">Анальные стимуляторы</a>
+                <ul class="dropdown-menu  dropdown-submenu-1">
+                  <!--<li><a href="#" class="dropdown-item">level 2</a></li>-->
+                  <li class="dropdown-submenu">
+                    <a href="#" role="button" data-toggle="dropdown" class="dropdown-item dropdown-toggle">Анальные стимуляторы</a>
+                    <ul class="dropdown-menu dropdown-submenu-2">
+                      <li><a href="#" class="dropdown-item">level 3</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Для него</a>
+          <li class="nav-item dropdown-menu-hover" id="dropdownEvent">
+          <a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle">Для него</a>
+          <ul class="dropdown-menu dropright dropdown-menu-show dropdown-position-1">
+            <li class="dropdown-submenu">
+              <a href="#" role="button" data-toggle="dropdown" class="dropdown-item dropdown-toggle">Анальные стимуляторы</a>
+              <ul class="dropdown-menu  dropdown-submenu-1">
+                <!--<li><a href="#" class="dropdown-item">level 2</a></li>-->
+                <li class="dropdown-submenu">
+                  <a href="#" role="button" data-toggle="dropdown" class="dropdown-item dropdown-toggle">Анальные стимуляторы</a>
+                  <ul class="dropdown-menu dropdown-submenu-2">
+                    <li><a href="#" class="dropdown-item">level 3</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="dropdown-submenu">
+              <a href="#" role="button" data-toggle="dropdown" class="dropdown-item dropdown-toggle">Анальные стимуляторы</a>
+              <ul class="dropdown-menu  dropdown-submenu-1">
+                <!--<li><a href="#" class="dropdown-item">level 2</a></li>-->
+                <li class="dropdown-submenu">
+                  <a href="#" role="button" data-toggle="dropdown" class="dropdown-item dropdown-toggle">Анальные стимуляторы</a>
+                  <ul class="dropdown-menu dropdown-submenu-2">
+                    <li><a href="#" class="dropdown-item">level 3</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown-menu-hover" id="dropdownEvent">
+            <a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle">Белье</a>
+            <ul class="dropdown-menu dropright dropdown-menu-show dropdown-position-2">
+              <li class="dropdown-submenu">
+                <a href="#" role="button" data-toggle="dropdown" class="dropdown-item dropdown-toggle">Анальные стимуляторы</a>
+                <ul class="dropdown-menu  dropdown-submenu-1">
+                  <!--<li><a href="#" class="dropdown-item">level 2</a></li>-->
+                  <li class="dropdown-submenu">
+                    <a href="#" role="button" data-toggle="dropdown" class="dropdown-item dropdown-toggle">Анальные стимуляторы</a>
+                    <ul class="dropdown-menu dropdown-submenu-2">
+                      <li><a href="#" class="dropdown-item">level 3</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="dropdown-submenu">
+                <a href="#" role="button" data-toggle="dropdown" class="dropdown-item dropdown-toggle">Анальные стимуляторы</a>
+                <ul class="dropdown-menu  dropdown-submenu-1">
+                  <!--<li><a href="#" class="dropdown-item">level 2</a></li>-->
+                  <li class="dropdown-submenu">
+                    <a href="#" role="button" data-toggle="dropdown" class="dropdown-item dropdown-toggle">Анальные стимуляторы</a>
+                    <ul class="dropdown-menu dropdown-submenu-2">
+                      <li><a href="#" class="dropdown-item">level 3</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Белье</a>
-          </li>   
-          <li class="nav-item">
-            <a class="nav-link" href="#">Для пар</a>
-          </li>  
-          <li class="nav-item">
-            <a class="nav-link" href="#">Bdsm</a>
-          </li>  
-          <li class="nav-item">
-            <a class="nav-link" href="#">Косметика</a>
-          </li>  
-          <li class="nav-item">
-            <a class="nav-link" href="#">Новинки</a>
-          </li>  
-          <li class="nav-item">
-            <a class="nav-link" href="#">Распродажа</a>
-          </li>   
-          <li class="nav-item">
+          <li class="nav-item dropdown-menu-hover" id="dropdownEvent">
+            <a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle">Для пар</a>
+            <ul class="dropdown-menu dropright dropdown-menu-show dropdown-position-3">
+              <li class="dropdown-submenu">
+                <a href="#" role="button" data-toggle="dropdown" class="dropdown-item dropdown-toggle">Анальные стимуляторы</a>
+                <ul class="dropdown-menu  dropdown-submenu-1">
+                  <!--<li><a href="#" class="dropdown-item">level 2</a></li>-->
+                  <li class="dropdown-submenu">
+                    <a href="#" role="button" data-toggle="dropdown" class="dropdown-item dropdown-toggle">Анальные стимуляторы</a>
+                    <ul class="dropdown-menu dropdown-submenu-2">
+                      <li><a href="#" class="dropdown-item">level 3</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="dropdown-submenu">
+                <a href="#" role="button" data-toggle="dropdown" class="dropdown-item dropdown-toggle">Анальные стимуляторы</a>
+                <ul class="dropdown-menu  dropdown-submenu-1">
+                  <!--<li><a href="#" class="dropdown-item">level 2</a></li>-->
+                  <li class="dropdown-submenu">
+                    <a href="#" role="button" data-toggle="dropdown" class="dropdown-item dropdown-toggle">Анальные стимуляторы</a>
+                    <ul class="dropdown-menu dropdown-submenu-2">
+                      <li><a href="#" class="dropdown-item">level 3</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown-menu-hover" id="dropdownEvent">
+            <a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle">BDSM</a>
+            <ul class="dropdown-menu dropright dropdown-menu-show dropdown-position-4">
+              <li class="dropdown-submenu">
+                <a href="#" role="button" data-toggle="dropdown" class="dropdown-item dropdown-toggle">Анальные стимуляторы</a>
+                <ul class="dropdown-menu  dropdown-submenu-1">
+                  <!--<li><a href="#" class="dropdown-item">level 2</a></li>-->
+                  <li class="dropdown-submenu">
+                    <a href="#" role="button" data-toggle="dropdown" class="dropdown-item dropdown-toggle">Анальные стимуляторы</a>
+                    <ul class="dropdown-menu dropdown-submenu-2">
+                      <li><a href="#" class="dropdown-item">level 3</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="dropdown-submenu">
+                <a href="#" role="button" data-toggle="dropdown" class="dropdown-item dropdown-toggle">Анальные стимуляторы</a>
+                <ul class="dropdown-menu  dropdown-submenu-1">
+                  <!--<li><a href="#" class="dropdown-item">level 2</a></li>-->
+                  <li class="dropdown-submenu">
+                    <a href="#" role="button" data-toggle="dropdown" class="dropdown-item dropdown-toggle">Анальные стимуляторы</a>
+                    <ul class="dropdown-menu dropdown-submenu-2">
+                      <li><a href="#" class="dropdown-item">level 3</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown-menu-hover" id="dropdownEvent">
+            <a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle">Косметика</a>
+            <ul class="dropdown-menu dropleft dropdown-menu-show dropdown-position-5">
+              <li class="dropdown-submenu">
+                <a href="#" role="button" data-toggle="dropdown" class="dropdown-item dropdown-toggle">Анальные стимуляторы</a>
+                <ul class="dropdown-menu  dropdown-submenu-1">
+                  <!--<li><a href="#" class="dropdown-item">level 2</a></li>-->
+                  <li class="dropdown-submenu">
+                    <a href="#" role="button" data-toggle="dropdown" class="dropdown-item dropdown-toggle">Анальные стимуляторы</a>
+                    <ul class="dropdown-menu dropdown-submenu-2">
+                      <li><a href="#" class="dropdown-item">level 3</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="dropdown-submenu">
+                <a href="#" role="button" data-toggle="dropdown" class="dropdown-item dropdown-toggle">Анальные стимуляторы</a>
+                <ul class="dropdown-menu  dropdown-submenu-1">
+                  <!--<li><a href="#" class="dropdown-item">level 2</a></li>-->
+                  <li class="dropdown-submenu">
+                    <a href="#" role="button" data-toggle="dropdown" class="dropdown-item dropdown-toggle">Анальные стимуляторы</a>
+                    <ul class="dropdown-menu dropdown-submenu-2">
+                      <li><a href="#" class="dropdown-item">level 3</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <!--
+          <li class="nav-item dropdown" id="dropdownEvent">
+            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Для нее
+            </a>
+            <div class="dropdown-menu dropdown-menu--1 dropright" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item dropdown--2 dropdown-toggle" href="#" data-toggle="dropdown">Анальные стимуляторы</a>
+              <div class="dropdown-menu dropdown-menu--2">
+                <a class="dropdown-item" href="#">Link 1</a>
+                <a class="dropdown-item" href="#">Link 2</a>
+                <a class="dropdown-item" href="#">Link 3</a>
+              </div>
+              <a class="dropdown-item dropdown--2 dropdown-toggle" href="#" data-toggle="dropdown">Анальные стимуляторы</a>
+              <div class="dropdown-menu dropdown-menu--2">
+                <a class="dropdown-item" href="#">Link 3</a>
+                <a class="dropdown-item" href="#">Link 4</a>
+                <a class="dropdown-item" href="#">Link 5</a>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item dropdown" id="dropdownEvent">
+            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Для него
+            </a>
+            <div class="dropdown-menu dropdown-menu--1 dropright" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item dropdown--2 dropdown-toggle" href="#" data-toggle="dropdown">Анальные стимуляторы</a>
+              <div class="dropdown-menu dropdown-menu--2">
+                <a class="dropdown-item" href="#">Link 1</a>
+                <a class="dropdown-item" href="#">Link 2</a>
+                <a class="dropdown-item" href="#">Link 3</a>
+              </div>
+              <a class="dropdown-item" href="#">Анальные стимуляторы</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown" id="dropdownEvent">
+            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Для белье
+            </a>
+            <div class="dropdown-menu dropdown-menu--1 dropright" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item dropdown--2 dropdown-toggle" href="#" data-toggle="dropdown">Анальные стимуляторы</a>
+              <div class="dropdown-menu dropdown-menu--2">
+                <a class="dropdown-item" href="#">Link 1</a>
+                <a class="dropdown-item" href="#">Link 2</a>
+                <a class="dropdown-item" href="#">Link 3</a>
+              </div>
+              <a class="dropdown-item" href="#">Анальные стимуляторы</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown" id="dropdownEvent">
+            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Для пар
+            </a>
+            <div class="dropdown-menu dropdown-menu--1 dropright" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item dropdown--2 dropdown-toggle" href="#" data-toggle="dropdown">Анальные стимуляторы</a>
+              <div class="dropdown-menu dropdown-menu--2">
+                <a class="dropdown-item" href="#">Link 1</a>
+                <a class="dropdown-item" href="#">Link 2</a>
+                <a class="dropdown-item" href="#">Link 3</a>
+              </div>
+              <a class="dropdown-item" href="#">Анальные стимуляторы</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown" id="dropdownEvent">
+            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Bdsm
+            </a>
+            <div class="dropdown-menu dropdown-menu--1 dropright" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item dropdown--2 dropdown-toggle" href="#" data-toggle="dropdown">Анальные стимуляторы</a>
+              <div class="dropdown-menu dropdown-menu--2">
+                <a class="dropdown-item" href="#">Link 1</a>
+                <a class="dropdown-item" href="#">Link 2</a>
+                <a class="dropdown-item" href="#">Link 3</a>
+              </div>
+              <a class="dropdown-item" href="#">Анальные стимуляторы</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown" id="dropdownEvent">
+            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Косметика
+            </a>
+            <div class="dropdown-menu dropdown-menu--1 dropright" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item dropdown--2 dropdown-toggle" href="#" data-toggle="dropdown">Анальные стимуляторы</a>
+              <div class="dropdown-menu dropdown-menu--2">
+                <a class="dropdown-item" href="#">Link 1</a>
+                <a class="dropdown-item" href="#">Link 2</a>
+                <a class="dropdown-item" href="#">Link 3</a>
+              </div>
+              <a class="dropdown-item" href="#">Анальные стимуляторы</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown" id="dropdownEvent">
+            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Новинки
+            </a>
+            <div class="dropdown-menu dropdown-menu--1 dropright" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item dropdown--2 dropdown-toggle" href="#" data-toggle="dropdown">Анальные стимуляторы</a>
+              <div class="dropdown-menu dropdown-menu--2">
+                <a class="dropdown-item" href="#">Link 1</a>
+                <a class="dropdown-item" href="#">Link 2</a>
+                <a class="dropdown-item" href="#">Link 3</a>
+              </div>
+              <a class="dropdown-item" href="#">Анальные стимуляторы</a>
+            </div>
+          </li>-->
+          <li class="nav-item dropdown" id="dropdownEvent">
+            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Новинки
+            </a>
+          </li>
+          <li class="nav-item dropdown" id="dropdownEvent">
+            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Распродажа
+            </a>
+          </li>
+          <li class="nav-item desktop-user-bar__item">
             <div class="d-flex justify-content-between desktop-user-bar">
-              <button class="nav-buttons basket-btn" type="button"><img src="img/basket-icon.svg" alt="basket-icon"><span>10</span></button>
-              <button class="nav-buttons favorite-btn" type="button"><img src="img/favorite-icon.svg" alt="basket-icon"><span>10</span></button>
+              <button class="nav-buttons btn-notification basket-btn" type="button"><img src="img/basket-icon.svg" alt="basket-icon"><span>10</span></button>
+              <button class="nav-buttons btn-notification favorite-btn" type="button"><img src="img/favorite-icon.svg" alt="basket-icon"><span>10</span></button>
               <button class="nav-buttons user-btn" type="button"><img src="img/user-icon.svg" alt="basket-icon"></button>
-              <a class="nav-buttons tel-btn"><img src="img/basket-icon.svg" alt="tel-icon"></a>
+              <button class="nav-buttons tel-btn"><img src="img/search-icon.svg" alt="tel-icon"></button>
             </div>
           </li>
         </ul>
       </div>  
-    </nav>--> 
-    <input type="search" class="search-input--mobile" placeholder="Поиск">
+      <hr class="nav-line">
+    </nav>
+    <div class="search--desktop-modal">
+      <input type="search" placeholder="Поиск">
+    </div>
     <ul class="single-clide header-banner">
       <li class="header-banner__item">
         <h2>Sex shop</h2>
@@ -116,7 +398,7 @@
         </div>
         <div class="category-item">
           <img class="category-image" src="img/category-3.jpg" alt="">
-          <img class="category-icon" src="img/category-3-1.svg" alt="">
+          <img class="category-icon" style="width: 35%; height: 35%;" src="img/category-3-1.svg" alt="">
           <p class="category-name">Для пар</p>
         </div>
         <div class="category-item">
@@ -145,41 +427,433 @@
           <p class="category-name">Распродажа</p>
         </div>
       </div>
-      <h2 class="h2-center">Почему выбирают нас?</h2>
+      <h2 class="h2-center h2-adv">Почему выбирают нас?</h2>
       <div class="adv-wrp">
         <div class="adv-item">
-          <img src="img/adv-1.svg" alt="adventages1">
+          <img src="img/adv-3.svg" width="34" height="34" alt="adventages1">
           <h4>Быстрая доставка</h4>
           <p>При стоимости заказа от 3000 рублей доставка бесплатная</p>
         </div>
         <div class="adv-item">
-          <img src="img/adv-2.svg" alt="adventages2">
+          <img src="img/adv-3.svg" width="34" height="34" alt="adventages2">
           <h4>Конфиденциальность</h4>
           <p>Вы получите товар в непрозрачной упаковке, без информации откуда этот товар</p>
         </div>
         <div class="adv-item">
-          <img src="img/adv-3.svg" alt="adventages3">
+          <img src="img/adv-3.svg" width="34" height="34" alt="adventages3">
           <h4>Ассортимент</h4>
           <p>Огромный выбор товаров под любое ваше желание</p>
         </div>
-        <div class="adv-item">
-          <img src="img/adv-4.svg" alt="adventages4">
+        <div class="adv-item adv-item--4">
+          <img src="img/adv-4.svg" width="34" height="34" alt="adventages4">
           <h4>Качество</h4>
           <p>Только товары высокого качества от проверенных поставщиков</p>
         </div>
-        <div class="adv-item">
-          <img src="img/adv-5.svg" alt="adventages5">
+        <div class="adv-item adv-item--5">
+          <img src="img/adv-5.svg" width="34" height="34" alt="adventages5">
           <h4>Бонусная программа</h4>
           <p>Возможность накапливать и тратить бонусы при каждой покупке</p>
         </div>
       </div>
+      <h2 class="h2-center h2-popular-prod">Популярные товары</h2>
+      <a class="popular-prod__link" href="#">Показать все товары <img src="img/Arrow.svg"></a>
+      <div class="popular-prod__wrp">
+        <div class="card">
+          <span class="card-hit"><p>ХИТ</p></span>
+          <input id="favorite-item--1" type="checkbox" name="favorite-item" value="бззззз">
+	        <label for="favorite-item--1"><svg width="16" height="16"><use xlink:href ="#favorite-icon"></use></svg></label>
+          <div class="card-img-wrp">
+            <img src="img/prod1.png" alt="">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Название товара</h5>
+            <p class="card-text">Описание товара</p>
+            <p class="card-price">1000 Р</p>
+            <div class="card-rating"><img src="img/Star.svg" alt=""><img src="img/Star.svg" alt=""><img src="img/Star.svg" alt=""><img src="img/Star.svg" alt=""><img src="img/Star.svg" alt=""></div>
+            <a href="#" class="btn card-button">Купить</a>
+          </div>
+        </div>
+        <div class="card">
+          <span class="card-hit"><p>ХИТ</p></span>
+          <input id="favorite-item--2" type="checkbox" name="favorite-item" value="порка">
+	        <label for="favorite-item--2"><svg width="16" height="16"><use xlink:href ="#favorite-icon"></use></svg></label>
+          <div class="card-img-wrp">
+            <img src="img/prod2.png" alt="">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Название товара</h5>
+            <p class="card-text">Описание товара</p>
+            <p class="card-price">1000 Р</p>
+            <div class="card-rating"><img src="img/Star.svg" alt=""><img src="img/Star.svg" alt=""><img src="img/Star.svg" alt=""><img src="img/Star.svg" alt=""><img src="img/Star.svg" alt=""></div>
+            <a href="#" class="btn card-button">Купить</a>
+          </div>
+        </div>
+        <div class="card">
+          <input id="favorite-item--3" type="checkbox" name="favorite-item" value="член">
+	        <label for="favorite-item--3"><svg width="16" height="16"><use xlink:href ="#favorite-icon"></use></svg></label>
+          <div class="card-img-wrp">
+            <img src="img/prod3.png" alt="">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Название товара</h5>
+            <p class="card-text">Описание товара</p>
+            <p class="card-price">1000 Р</p>
+            <div class="card-rating"><img src="img/Star.svg" alt=""><img src="img/Star.svg" alt=""><img src="img/Star.svg" alt=""><img src="img/Star.svg" alt=""><img src="img/Star.svg" alt=""></div>
+            <a href="#" class="btn card-button">Купить</a>
+          </div>
+        </div>
+        <div class="card">
+          <input id="favorite-item--4" type="checkbox" name="favorite-item" value="смазка">
+	        <label for="favorite-item--4"><svg width="16" height="16"><use xlink:href ="#favorite-icon"></use></svg></label>
+          <div class="card-img-wrp">
+            <img src="img/prod4.png" alt="">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Название товара</h5>
+            <p class="card-text">Описание товара</p>
+            <p class="card-price">1000 Р</p>
+            <div class="card-rating"><img src="img/Star.svg" alt=""><img src="img/Star.svg" alt=""><img src="img/Star.svg" alt=""><img src="img/Star.svg" alt=""><img src="img/Star.svg" alt=""></div>
+            <a href="#" class="btn card-button">Купить</a>
+          </div>
+        </div>
+        <div class="card">
+          <input id="favorite-item--4" type="checkbox" name="favorite-item" value="смазка">
+	        <label for="favorite-item--4"><svg width="16" height="16"><use xlink:href ="#favorite-icon"></use></svg></label>
+          <div class="card-img-wrp">
+            <img src="img/prod4.png" alt="">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Название товара</h5>
+            <p class="card-text">Описание товара</p>
+            <p class="card-price">1000 Р</p>
+            <div class="card-rating"><img src="img/Star.svg" alt=""><img src="img/Star.svg" alt=""><img src="img/Star.svg" alt=""><img src="img/Star.svg" alt=""><img src="img/Star.svg" alt=""></div>
+            <a href="#" class="btn card-button">Купить</a>
+          </div>
+        </div>
+        <div class="card">
+          <input id="favorite-item--4" type="checkbox" name="favorite-item" value="смазка">
+	        <label for="favorite-item--4"><svg width="16" height="16"><use xlink:href ="#favorite-icon"></use></svg></label>
+          <div class="card-img-wrp">
+            <img src="img/prod4.png" alt="">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Название товара</h5>
+            <p class="card-text">Описание товара</p>
+            <p class="card-price">1000 Р</p>
+            <div class="card-rating"><img src="img/Star.svg" alt=""><img src="img/Star.svg" alt=""><img src="img/Star.svg" alt=""><img src="img/Star.svg" alt=""><img src="img/Star.svg" alt=""></div>
+            <a href="#" class="btn card-button">Купить</a>
+          </div>
+        </div>
+      </div>
+      <script>
+        $( document ).ready(function() {
+          $('.popular-prod__wrp').slick({
+            arrows: true,
+            dots: false,
+            speed: 300,
+            slidesToShow: 5,
+            slidesToScroll: 1,
+            infinite: false,
+            responsive: [
+            {
+                breakpoint: 1160,
+                settings: {
+                  arrows: true,
+                  slidesToShow: 4
+                }
+              },
+            {
+                breakpoint: 820,
+                settings: {
+                  arrows: false,
+                  slidesToShow: 3
+                }
+              },
+              {
+                breakpoint: 600,
+                settings: {
+                  arrows: false,
+                  slidesToShow: 2
+                }
+              },
+              {
+                breakpoint: 290,
+                settings: {
+                  arrows: false,
+                  slidesToShow: 1
+                }
+              }
+            ]
+          });
+        });
+      </script>
+      <div class="banner-wrp">
+        <div class="banner-1__wrp">
+          <div class="banner-1__content">
+            <b>Бонусная программа</b>
+            <p>Получай бонусы и <i>оплачивай</i> ими следующие покупки!</p>
+            <a href="#" class="button button-red">Подробнее</a>
+          </div>
+        </div>
+        <div class="banner-2__wrp">
+          <div class="banner-2__content">
+            <b>Доставка</b>
+            <p>Курьерская доставка по всей России</p>
+            <span>Бесплатно</span>
+            <p>При заказе от 3000 рублей</p>
+            <a href="#" class="button ">Подробнее</a>
+          </div>
+        </div>
+      </div>
+      <h2 class="h2-center h2-popular-prod">Товары со скидкой</h2>
+      <a class="popular-prod__link" href="#">Показать все товары <img src="img/Arrow.svg"></a>
+      <div class="popular-prod__wrp sale-prod__wrp">
+        <div class="card">
+          <span class="card-hit card-sale"><p>-40%</p></span>
+          <input id="favorite-item--1" type="checkbox" name="favorite-item" value="бззззз">
+	        <label for="favorite-item--1"><svg width="16" height="16"><use xlink:href ="#favorite-icon"></use></svg></label>
+          <div class="card-img-wrp">
+            <img src="img/prod1.png" alt="">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Название товара</h5>
+            <p class="card-text">Описание товара</p>
+            <div class="price-wrp">
+              <p class="card-price old-price">1000 Р</p>
+              <p class="card-price new-price">1000 Р</p>
+            </div>
+            <div class="card-rating"><img src="img/Star.svg" alt=""><img src="img/Star.svg" alt=""><img src="img/Star.svg" alt=""><img src="img/Star.svg" alt=""><img src="img/Star.svg" alt=""></div>
+            <a href="#" class="btn card-button">Купить</a>
+          </div>
+        </div>
+        <div class="card">
+          <span class="card-hit card-sale"><p>-40%</p></span>
+          <input id="favorite-item--2" type="checkbox" name="favorite-item" value="порка">
+	        <label for="favorite-item--2"><svg width="16" height="16"><use xlink:href ="#favorite-icon"></use></svg></label>
+          <div class="card-img-wrp">
+            <img src="img/prod2.png" alt="">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Название товара</h5>
+            <p class="card-text">Описание товара</p>
+            <div class="price-wrp">
+              <p class="card-price old-price">1000 Р</p>
+              <p class="card-price new-price">1000 Р</p>
+            </div>
+            <div class="card-rating"><img src="img/Star.svg" alt=""><img src="img/Star.svg" alt=""><img src="img/Star.svg" alt=""><img src="img/Star.svg" alt=""><img src="img/Star.svg" alt=""></div>
+            <a href="#" class="btn card-button">Купить</a>
+          </div>
+        </div>
+        <div class="card">
+          <input id="favorite-item--3" type="checkbox" name="favorite-item" value="член">
+	        <label for="favorite-item--3"><svg width="16" height="16"><use xlink:href ="#favorite-icon"></use></svg></label>
+          <div class="card-img-wrp">
+            <img src="img/prod3.png" alt="">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Название товара</h5>
+            <p class="card-text">Описание товара</p>
+            <div class="price-wrp">
+              <p class="card-price old-price">1000 Р</p>
+              <p class="card-price new-price">1000 Р</p>
+            </div>
+            <div class="card-rating"><img src="img/Star.svg" alt=""><img src="img/Star.svg" alt=""><img src="img/Star.svg" alt=""><img src="img/Star.svg" alt=""><img src="img/Star.svg" alt=""></div>
+            <a href="#" class="btn card-button">Купить</a>
+          </div>
+        </div>
+        <div class="card">
+          <input id="favorite-item--4" type="checkbox" name="favorite-item" value="смазка">
+	        <label for="favorite-item--4"><svg width="16" height="16"><use xlink:href ="#favorite-icon"></use></svg></label>
+          <div class="card-img-wrp">
+            <img src="img/prod4.png" alt="">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Название товара</h5>
+            <p class="card-text">Описание товара</p>
+            <div class="price-wrp">
+              <p class="card-price old-price">1000 Р</p>
+              <p class="card-price new-price">1000 Р</p>
+            </div>
+            <div class="card-rating"><img src="img/Star.svg" alt=""><img src="img/Star.svg" alt=""><img src="img/Star.svg" alt=""><img src="img/Star.svg" alt=""><img src="img/Star.svg" alt=""></div>
+            <a href="#" class="btn card-button">Купить</a>
+          </div>
+        </div>
+        <div class="card">
+          <input id="favorite-item--4" type="checkbox" name="favorite-item" value="смазка">
+	        <label for="favorite-item--4"><svg width="16" height="16"><use xlink:href ="#favorite-icon"></use></svg></label>
+          <div class="card-img-wrp">
+            <img src="img/prod4.png" alt="">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Название товара</h5>
+            <p class="card-text">Описание товара</p>
+            <div class="price-wrp">
+              <p class="card-price old-price">1000 Р</p>
+              <p class="card-price new-price">1000 Р</p>
+            </div>
+            <div class="card-rating"><img src="img/Star.svg" alt=""><img src="img/Star.svg" alt=""><img src="img/Star.svg" alt=""><img src="img/Star.svg" alt=""><img src="img/Star.svg" alt=""></div>
+            <a href="#" class="btn card-button">Купить</a>
+          </div>
+        </div>
+        <div class="card">
+          <input id="favorite-item--4" type="checkbox" name="favorite-item" value="смазка">
+	        <label for="favorite-item--4"><svg width="16" height="16"><use xlink:href ="#favorite-icon"></use></svg></label>
+          <div class="card-img-wrp">
+            <img src="img/prod4.png" alt="">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Название товара</h5>
+            <p class="card-text">Описание товара</p>
+            <div class="price-wrp">
+              <p class="card-price old-price">1000 Р</p>
+              <p class="card-price new-price">1000 Р</p>
+            </div>
+            <div class="card-rating"><img src="img/Star.svg" alt=""><img src="img/Star.svg" alt=""><img src="img/Star.svg" alt=""><img src="img/Star.svg" alt=""><img src="img/Star.svg" alt=""></div>
+            <a href="#" class="btn card-button">Купить</a>
+          </div>
+        </div>
+      </div>
+      <script>
+        $( document ).ready(function() {
+          $('.sale-prod__wrp').slick({
+            arrows: true,
+            dots: false,
+            speed: 300,
+            slidesToShow: 5,
+            slidesToScroll: 1,
+            infinite: false,
+            responsive: [
+            {
+                breakpoint: 1160,
+                settings: {
+                  arrows: true,
+                  slidesToShow: 4
+                }
+              },
+            {
+                breakpoint: 820,
+                settings: {
+                  arrows: false,
+                  slidesToShow: 3
+                }
+              },
+              {
+                breakpoint: 600,
+                settings: {
+                  arrows: false,
+                  slidesToShow: 2
+                }
+              },
+              {
+                breakpoint: 290,
+                settings: {
+                  arrows: false,
+                  slidesToShow: 1
+                }
+              }
+            ]
+          });
+        });
+      </script>
+      <form class="promo">
+        <div class="promo-left">
+          <img src="img/promo-1.jpg" alt="" class="promo-img-1">
+          <img src="img/promo-2.jpg" alt="" class="promo-img-2">
+        </div>
+        <div class="promo-right">
+          <h2 class="h2-left">Получи подарок</h2>
+          <p class="gift-title">Зарегестрируйся и получи <b>300 рублей</b> на первую покупку в интернет-магазине SexBomb</p>
+          <div class="promo-radio">
+              <input id="male" class="input-radio" type="radio" name="gender" value="male">
+              <label for="male" class="label-radio">Мужчина</label>
+              <input id="female" class="input-radio" type="radio" name="gender" value="female">
+              <label for="female" class="label-radio">Женщина</label>
+          </div>
+          <input type="email" class="input promo-input" placeholder="Электронная почта">
+          <div class="check-wrp">
+            <input id="check1" class="promo-check-input" type="checkbox" name="check" value="check1">
+            <label class="promo-check-label" for="check1">Согласие на обработку персональных данных</label>
+          </div>
+            <button type="submit" class="button promo-button button-red">Зарегистрироваться</button>
+        </div>
+      </form>
+      <div class="about-us__wrp">
+        <h2 class="h2-left">О магазине</h2>
+        <span class="shown-p">Подарите себе и партнеру новые впечатления – скачайте приложение и управляйте любыми игрушками. Необычный магазин товаров для взрослых. Мы следим за развитием технологий и внедряем инновации в индустрию любви. Совместно с голландским производителем KIIROO и испанской компанией Adrien Lastic наши специалисты разработали приложение для смартфона, с помощью которого легко разнообразить сексуальную жизнь.<span class="show-about">Показать ещё</span><p class="hide-p">Подарите себе и партнеру новые впечатления – скачайте приложение и управляйте любыми игрушками. Необычный магазин товаров для взрослых. Мы следим за развитием технологий и внедряем инновации в индустрию любви. Совместно с голландским производителем KIIROO и испанской компанией Adrien Lastic наши специалисты разработали приложение для смартфона, с помощью которого легко разнообразить сексуальную жизнь.</p></span>
+        
+      </div>
+      <div class="footer-wrp">
+        <footer class="footer">
+          <ul class="footer__1-list">
+            <li class="footer__1-item">
+              <a href="#" class="footer-link">Доставка</a>
+            </li>
+            <li class="footer__1-item">
+              <a href="#" class="footer-link">Оплата</a>
+            </li>
+            <li class="footer__1-item">
+              <a href="#" class="footer-link">Гарантия и возврат</a>
+            </li>
+            <li class="footer__1-item">
+              <a href="#" class="footer-link">Анонимность</a>
+            </li>
+            <li class="footer__1-item">
+              <a href="#" class="footer-link">Бонусная программа</a>
+            </li>
+            <li class="footer__1-item">
+              <a href="#" class="footer-link">Таблица размеров</a>
+            </li>
+            <li class="footer__1-item">
+              <a href="#" class="footer-link">Новости</a>
+            </li>
+            <li class="footer__1-item">
+              <a href="#" class="footer-link">Отзывы</a>
+            </li>
+          </ul>
+          <ul class="footer__2-list">
+            <li class="footer__2-item ">
+              <b>Контакты:</b>
+              <p>8 (800) 800-00-00</p>
+              <p>8 (921) 800-00-00</p>
+            </li>
+            <li class="footer__2-item footer__2-item--russia">
+              <p>бесплатно по России</p>
+            </li>
+            <li class="footer__2-item">
+              <b>Режим работы:</b>
+              <p>с 9:00 до 21:00</p>
+              <p>Без выходных</p>
+            </li>
+            <li class="footer__2-item">
+              <b>Электронный адрес:</b>
+              <p>sexshop@info.ru</p>
+              <div class="footer-social">
+                <img src="img/whats-up-f.svg" alt="">
+                <img src="img/tg-f.svg" alt="">
+                <img src="img/inst-f.svg" alt="">
+              </div>
+            </li>
+            <li class="footer__2-item footer__2-item--card">
+              <img src="img/visa.svg" alt="">
+              <img src="img/mast-card.svg" alt="">
+            </li>
+          </ul>
+          <hr class="footer-line">
+          <div class="footer_last-row">
+            <img src="img/18plus.svg" alt="">
+            <p>Материалы, размещенные на страницах данного сайта, предназначены для лиц старше 18 лет.</p>
+          </div>
+        </footer>
+      </div>
+      
     </main>  
 
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-    <script src="js/slick.min.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/index.js"></script>
     <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>

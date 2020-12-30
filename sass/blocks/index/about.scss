@@ -1,0 +1,28 @@
+
+
+.hide-p{
+    transition: .2s;
+    max-height: 0px;
+    overflow: hidden;
+}
+
+.show-p{
+    max-height: 500px;
+}
+
+.show-about{
+    cursor: pointer;
+}
+
+.about-us__wrp{
+    h2{
+        margin-bottom: 30px;
+    }
+    width: 90%;
+    max-width: 1240px;
+    margin: 80px auto;
+    p{
+        margin-bottom: 0;
+        display: inline-block;
+    }
+}
