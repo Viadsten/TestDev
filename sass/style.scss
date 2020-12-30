@@ -67,6 +67,21 @@
   
 }
 
-.button-red{
- 
+.button-red, .card-button{
+ transition: .3s ease;
+ &:hover{
+
+    box-shadow: 0px 0px 10px #FB565D;
+ }
+}
+
+.header-banner-btn{
+  transition: .2s ease-out;
+  &:hover{
+    line-height: 48px;
+    color: #fff;
+    border: 1px solid #fff;
+    background-color: #FB565D;
+    font-weight: 500;
+  }
 }
