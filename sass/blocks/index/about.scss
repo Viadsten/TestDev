@@ -12,6 +12,8 @@
 
 .show-about{
     cursor: pointer;
+    font-size: 12px;
+    opacity: 0.6;
 }
 
 .about-us__wrp{
@@ -24,5 +26,15 @@
     p{
         margin-bottom: 0;
         display: inline-block;
+    }
+}
+
+@media(min-width: 600px){
+    .show-about{
+        display: none;
+    }
+
+    .hide-p{
+        max-height: 500px;
     }
 }

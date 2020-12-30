@@ -1297,7 +1297,9 @@ input[type=checkbox] {
   max-height: 500px; }
 
 .show-about {
-  cursor: pointer; }
+  cursor: pointer;
+  font-size: 12px;
+  opacity: 0.6; }
 
 .about-us__wrp {
   width: 90%;
@@ -1308,6 +1310,12 @@ input[type=checkbox] {
   .about-us__wrp p {
     margin-bottom: 0;
     display: inline-block; }
+
+@media (min-width: 600px) {
+  .show-about {
+    display: none; }
+  .hide-p {
+    max-height: 500px; } }
 
 * {
   margin: 0;
