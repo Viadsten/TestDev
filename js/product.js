@@ -4,6 +4,7 @@ $(document).ready(function() {
 
     let descrBtn = document.querySelectorAll('.prod-descr-btn');
     let descrBody = document.querySelectorAll('.prod-descr-body');
+    let descrPlus = document.querySelectorAll('.descr-btn-plus--i');
 
     for (let i = 0; i < descrBtn.length; i++){
         $(descrBody[i]).slideUp();
@@ -11,7 +12,8 @@ $(document).ready(function() {
             for (let j = 0; j < descrBtn.length; j++){
                 if(j != i){$(descrBody[j]).slideUp();}
             }
-            $(descrBody[i]).slideToggle();//Для мобилок
+            $(descrBody[i]).slideToggle();
+            descrPlus[i].classList.toggle('plus-rotate');//Для мобилок
             //$(descrBody[i]).slideDown();//Для пк
         }
     }

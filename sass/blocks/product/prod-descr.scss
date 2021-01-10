@@ -9,7 +9,45 @@
 .decr-body-active{
     max-height: 5000px;
 }*/
-
+.prod-line-wrp{
+    display: none;
+}
+.prod-descr-btn{
+    position: relative;
+    width: 100%;
+    border: none;
+    background-color: #fff;
+    text-align: left;
+    font-weight: 550;
+    font-size: 20px;
+    line-height: 20px;
+    height: 50px;
+    color: #FD585E;
+    border-bottom: 2px solid rgba(141, 141, 141, 0.3);
+}
+.plus-rotate{
+    transform: rotate(90Deg);
+}
+.descr-btn-plus, .descr-btn-plus i{
+    display: block;
+    position: absolute;
+    content: '';
+    width: 18px;
+    border-radius: 2px;
+    height: 2px;
+    top: calc(50% - 1px);
+    right: 10px;
+    background-color: rgba(49, 49, 49, 0.8);
+    transition: all .3s;
+}
+.descr-btn-plus i{
+    right: 0;
+}
+.prod-descr-wrp{
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+}
 
 
 @media(min-width:600px){
