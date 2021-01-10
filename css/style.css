@@ -2175,8 +2175,7 @@ input[type=checkbox] {
   .product-counter input {
     width: 50px;
     text-align: center;
-    height: 40px;
-    padding-top: 7px;
+    height: 43px;
     border: none; }
   .product-counter span {
     cursor: pointer; }
