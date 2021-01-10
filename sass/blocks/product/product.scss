@@ -125,11 +125,124 @@
     padding: 0 20px;
 }
 
-@media (min-width:900px){
+@media (min-width:750px){
     .product-wrp{
         max-width: 1260px;
         margin: 0 auto;
         display: flex;
     }
+    .product__img-wrp{}
+    .product-banner--1{
+        top: 20px;
+    }
+    .product-banner--2{
+        top: 70px;
+    }
+    .product-banner--3{
+        top: 120px;
+    }
 
+    .product-settings{
+        display: grid;
+        max-width: 550px;
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+    .product-name{
+        margin-top: 0 !important;
+        margin-bottom: 0px;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        order: 1;
+    }
+    .rating-area{
+        height: 30px;
+        order: 2;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    .product-small-talk{
+        order: 3;
+    }
+    .product-price__wrp{
+        margin-top: 10px !important;
+        order: 4;
+    }
+
+    .color-wrp--product{
+        order: 5;
+        margin-top: 0 !important;
+    }
+    .product-btn-wrp{
+        order: 6;
+        margin-top: 0 !important;
+        margin-bottom: 110px !important;
+
+    }
+
+    .product__img-wrp{
+        max-width: 505px;
+    }
+    .product__img--active{
+        height: 440px;
+        max-height: 440px;
+        max-width: 385px;
+    }
+
+    .product__img--active img {
+        max-width: 360px;
+        max-height: 400px;
+    }
+    .product__img-scroll{
+        width: 20%;
+        height: 440px;
+        img{
+            width: 100%;
+        }
+        
+    }
+    .product__img-wrp .slick-vertical {
+        height: 440px;
+        margin-top: -30px;
+    }
+
+    .product__img-wrp{
+        .slick-vertical .slick-slide{
+            height: 133px;
+            //margin-bottom: 15px;
+        }
+       
+    }
+
+    .img-scroll__wrp {
+        margin-left: 6px;
+        width: 100%;
+        max-width: 80px;
+        height: 121px !important;
+        max-height: 121px;
+    }
+    .img-scroll__wrp img {
+        margin-top: 8px;
+        max-width: 70px;
+        max-height: 110px;
+        
+    }
+
+    .product-small-talk, .product-price__wrp{
+        margin-top: -10px !important;
+    }
+    .product-price__wrp{
+        margin-top: -15px !important;
+    }
+
+    .product-wrp{
+        margin-bottom: 50px;
+    }
+}
+
+@media(min-width: 980px){
+    .product__img--active{
+        width: 385px;
+    }
 }

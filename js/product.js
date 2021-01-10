@@ -6,17 +6,52 @@ $(document).ready(function() {
     let descrBody = document.querySelectorAll('.prod-descr-body');
     let descrPlus = document.querySelectorAll('.descr-btn-plus--i');
 
+
     for (let i = 0; i < descrBtn.length; i++){
-        $(descrBody[i]).slideUp();
-        descrBtn[i].onclick = function(){
+        if($(window).width() < 790) {
+            $(descrBody[i]).slideUp(0);
+            descrBtn[i].onclick = function(){
             for (let j = 0; j < descrBtn.length; j++){
-                if(j != i){$(descrBody[j]).slideUp();}
+                if(j != i){
+                    $(descrBody[j]).slideUp();
+                    descrPlus[j].classList.remove('plus-rotate');
+                    descrBtn[j].classList.remove('color-red');
+                }
             }
             $(descrBody[i]).slideToggle();
-            descrPlus[i].classList.toggle('plus-rotate');//Для мобилок
-            //$(descrBody[i]).slideDown();//Для пк
+            descrBtn[i].classList.toggle('color-red');
+            descrPlus[i].classList.toggle('plus-rotate');
         }
+          } else {
+            $(descrBody[i]).slideUp(0);
+            $(descrBody[0]).slideDown(0);
+            descrBtn[i].onclick = function(){
+                if(i == 0){
+                    lineAnimate(0);
+                }
+                else if(i == 1){
+                    lineAnimate(320);
+                }
+                else if(i == 2){
+                    lineAnimate(640);
+                }
+                for (let j = 0; j < descrBtn.length; j++){
+                    if(j != i){
+                        $(descrBody[j]).slideUp();
+                    }
+                }
+                $(descrBody[i]).slideDown();
+            }
+          }
+        
     }
+
+    function lineAnimate(leftPos) {
+        $('.prod-line-front').animate({
+            left: leftPos
+        }, 300);
+    }
+      
 
     $('.minus').click(function () {
         var $input = $(this).parent().find('input');

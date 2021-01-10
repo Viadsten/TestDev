@@ -12,21 +12,47 @@
 .prod-line-wrp{
     display: none;
 }
+
+
 .prod-descr-btn{
     position: relative;
     width: 100%;
     border: none;
     background-color: #fff;
     text-align: left;
-    font-weight: 550;
+    font-weight: 500;
     font-size: 20px;
     line-height: 20px;
     height: 50px;
-    color: #FD585E;
+    //color: #FD585E;
+    color: rgba(49, 49, 49, 0.8);
     border-bottom: 2px solid rgba(141, 141, 141, 0.3);
 }
 .plus-rotate{
     transform: rotate(90Deg);
+}
+.prod-descr-body{
+    border-bottom: 2px solid rgba(141, 141, 141, 0.3);
+    padding-top: 15px;
+    color: rgba(49, 49, 49, 0.8);
+}
+.prod-text-list{
+    margin-left: 20px;
+    color: #FD585E;
+    span{
+        
+        color: rgba(49, 49, 49, 0.8);
+    }
+    li{
+        margin-bottom: 5px;
+    }
+}
+.subcategory-prod-text{
+    font-weight: 500;
+}
+.feedback-count{
+    margin-left: 7px;
+    font-weight: 500;
 }
 .descr-btn-plus, .descr-btn-plus i{
     display: block;
@@ -44,21 +70,86 @@
     right: 0;
 }
 .prod-descr-wrp{
+    max-width: 1260px;
+    margin: 0 auto;
     padding: 0 20px;
     display: flex;
     flex-direction: column;
 }
 
+.color-red{
+    color: #FD585E;
+}
 
-@media(min-width:600px){
+@media(min-width:790px){
     .prod-descr-wrp{
         display: flex;  
+        flex-direction: row;
         flex-wrap: wrap;
+    }
+    .descr-btn-plus, .descr-btn-plus i{
+        display: none;
+    }
+    .prod-descr-btn--1{
+        padding-left: 10px;
+        margin-left: auto;
+        text-align: left;
+    }
+    .prod-descr-btn--2{
+        text-align: center;
+    }
+    .prod-descr-btn--3{
+        padding-right: 10px;
+        margin-right: auto;
+        text-align: right;
     }
     .prod-descr-btn{
         order: 1;
+        width: 250px;
+        border: none;
+        margin-bottom: 20px;
     }
     .prod-descr-body{
         order: 2;
+    }
+    .prod-line-wrp{
+        display: block;
+        position: absolute;
+        width: 100%;
+        left: 50%;
+        margin-left: -375px;
+        z-index: 3;
+        max-width: 750px;
+    }
+
+    .prod-line-back{
+        width: 100%;
+        height: 2px;
+        background-color: rgba(141, 141, 141, 0.3);
+        height: 2px;
+        border: none;
+        position: absolute;
+        margin: 0;
+        top: 50px;
+    }
+    .prod-line-front{
+        position: absolute;
+        top: 49px;
+        left: 0;
+        margin: 0;
+        background-color: #FD585E;
+        width: 115px;
+        height: 3px;
+    }
+    .prod-descr-body{
+        border: none;
+    }
+
+    .prod-descr-body, .prod-descr-text, .prod-lext-list{
+        font-size: 20px;
+        
+    }
+    .prod-text-list{
+        margin-left: 70px;
     }
 }
