@@ -249,8 +249,10 @@
     background-color: #fff;
     top: 0;
     //padding-bottom: 0 !important;
-   // box-shadow: 0 0 10px rgba($color: #000000, $alpha: 0.3);
+   //
+    //box-shadow: 0 0 10px rgba($color: #000000, $alpha: 0.1);
   }
+  
   .search-input--mobile{
     margin-bottom: 0 !important;
   }
@@ -262,3 +264,4 @@
     padding-bottom: 0;
   }
 }
+
