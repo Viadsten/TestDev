@@ -2709,8 +2709,8 @@ input[type=checkbox] {
   margin-top: 15px; }
   .form-red-btn:hover {
     border-color: #FD585E;
-    background-color: #fff;
-    color: #FD585E; }
+    background-color: #FC3F45;
+    font-size: 17px; }
 
 .basket-final-wrp {
   margin-top: 30px; }
@@ -2730,7 +2730,7 @@ input[type=checkbox] {
       -ms-flex-pack: justify;
           justify-content: space-between;
   font-size: 18px;
-  max-width: 500px; }
+  max-width: 675px; }
   .basket-form-price-wrp i {
     font-style: normal;
     font-size: 18px; }
@@ -2756,6 +2756,8 @@ input[type=checkbox] {
   max-width: 500px; }
 
 @media (min-width: 810px) {
+  .basket-form-price-wrp i {
+    width: 165px; }
   .basket-form-title {
     font-size: 25px;
     line-height: 25px; }
@@ -2825,7 +2827,9 @@ input[type=checkbox] {
     margin: 40px auto; }
   .h3-basket, .h2-basket {
     padding-left: 0;
-    margin-left: calc(50vw - 630px); } }
+    margin-left: calc(50vw - 620px); }
+  .h3-basket {
+    margin-top: 60px; } }
 
 * {
   margin: 0;
