@@ -78,7 +78,7 @@
     display: flex;
     justify-content: space-between;
     font-size: 18px;
-    max-width: 675px;
+    
    // margin-right: 100px;
     i{
         font-style: normal;
@@ -107,12 +107,16 @@
 
 .final-amount-wrp{
     display: flex;
-    max-width: 500px;
+   //max-width: 675px;
 }
 
 @media(min-width:810px){
+    .final-amount-wrp{
+        display: flex;
+        max-width: 500px;
+    }
     .basket-form-price-wrp{
-
+        max-width: 675px;
         i{
 
             width: 165px;

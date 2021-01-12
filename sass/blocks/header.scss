@@ -222,3 +222,43 @@
 .dropdown-toggle::after{
   display: none !important;
 }
+
+.sticky {
+  position: fixed !important;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .category-header {
+  padding-top: 102px;
+}
+
+.sticky + .header-banner {
+  padding-top: 102px;
+}
+
+.sticky + .product-header {
+  margin-top: 102px !important;
+}
+
+@media(max-width: 990px){
+  .navbar{
+    width: 100%;
+    position: fixed !important;
+    z-index: 100;
+    background-color: #fff;
+    top: 0;
+    //padding-bottom: 0 !important;
+   // box-shadow: 0 0 10px rgba($color: #000000, $alpha: 0.3);
+  }
+  .search-input--mobile{
+    margin-bottom: 0 !important;
+  }
+  .category-header, .header-banner, .product-header{
+    margin-top: 130px;
+  }
+  .navbar-collapse{
+    margin-top: 20px;
+    padding-bottom: 0;
+  }
+}

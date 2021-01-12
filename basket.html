@@ -156,8 +156,6 @@
     </div>
     <div class="product-header">
     </div>
-    
-
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
@@ -272,7 +270,7 @@
             </div>
             <div class="fotm-inp-btn-wrp">
                 <span class="final-amount-wrp"><p class="final-amount">ИТОГО:</p><i class="final-amount-count">25 500Р</i></span>
-                <button class="button form-red-btn">Оформить</button>
+                <button class="button form-red-btn" data-toggle="modal" data-target="#purchaseModalCenter">Оформить</button>
             </div>
 
         </div>
@@ -339,9 +337,24 @@
           </div>
         </footer>
         <hr class="footer-line">
-
       </div>
-      
+      <div class="modal fade" id="purchaseModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered basket-modal-content" role="document">
+          <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            <div class="modal-body">
+                <h5 class="basket-modal-title">Благодарим за покупку!</h5>
+                <p class="basket-modal-subtitle">Скоро с Вами свяжется наш<br>менеджер для подтверждения заказа</p>
+                <!--Текст для зарегистрированных пользователей-->
+                <p class="basket-modal-text basket-modal-text--registered">ПОЗДРАВЛЯЕМ!<br>Вам начислено <span class="modal-bonus-count">150 БОНУСОВ!</span> Можете их использовать при оплате следующей покупки</p>
+                <!--Текст для НЕ зарегистрированных пользователей-->
+                <p class="basket-modal-text basket-modal-text--unregistered">Участвуйте в нашей <span class="modal-bonus-count">БОНУСНОЙ ПРОГРАММЕ</span> и Ваши покупки станут еще выгоднее</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>  
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
     <script src="js/index.js"></script>
