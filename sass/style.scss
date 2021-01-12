@@ -4,6 +4,7 @@
 @import "blocks/search-input.scss";
 @import "blocks/category.scss";
 @import "mixins.scss";
+@import "blocks/modal.scss";
 //index
 @import "blocks/index/index-banner.scss";
 @import "blocks/index/advantages.scss";
@@ -129,5 +130,23 @@
     &:hover{
       line-height: 38px;
     }
+  }
+}
+
+.btn-red{
+  color: #fff;
+  background-color: #FD585E;
+  border-radius: 10px;
+  height: 46px;
+  line-height: 46px;
+  //width: 100%;
+  transition: .3s;
+  border: 1px solid #fff;
+  //margin-top: 15px;
+  &:hover{
+      border-color: #FC3F45;
+      background-color: #FC3F45;
+      font-size: 17px;
+      //color: #FD585E;
   }
 }

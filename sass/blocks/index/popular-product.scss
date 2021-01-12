@@ -40,6 +40,9 @@
 }
 
 .card{
+    display: block;
+    margin-left: auto !important;
+    margin-right: auto !important;
     margin-right: 5px;
     outline: none;
     margin-top: 20px;
@@ -138,7 +141,10 @@
     }
 }
 .card{
-    margin-left: 15px !important;
+    display: block !important;
+margin-left: auto !important;
+margin-right: auto !important;
+    //margin-left: 15px !important;
     margin-bottom: 20px !important;
 }
 
@@ -151,7 +157,10 @@
         margin: 70px auto 0;
     }
     .card{
-        margin-left: 15px !important;
+        display: block;
+    margin-left: auto !important;
+    margin-right: auto !important;
+       // margin-left: 15px !important;
         width: 207px !important;
         height: 400px !important;
         img{

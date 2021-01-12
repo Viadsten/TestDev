@@ -85,8 +85,12 @@
     .banner-wrp{
         margin-top: 80px;
         display: flex;
+        
         justify-content: space-between;
         align-items: center;
+    }
+    .banner-wrp-index{
+        flex-direction: row !important;
     }
     .banner-1__wrp{
         width: 45%;

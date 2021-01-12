@@ -149,8 +149,9 @@
             <div class="d-flex justify-content-between desktop-user-bar">
               <button class="nav-buttons btn-notification basket-btn" type="button"><img src="img/basket-icon.svg" alt="basket-icon"><span>10</span></button>
               <button class="nav-buttons btn-notification favorite-btn" type="button"><img src="img/favorite-icon.svg" alt="basket-icon"><span>10</span></button>
-              <button class="nav-buttons user-btn" type="button"><img src="img/user-icon.svg" alt="basket-icon"></button>
               <button class="nav-buttons search-btn"><img src="img/search-icon.svg" alt="tel-icon"></button>
+              <button class="nav-buttons user-btn" type="button"><img src="img/user-icon.svg" alt="basket-icon"></button>
+              
             </div>
           </li>
         </ul>
@@ -713,7 +714,40 @@
         <hr class="footer-line">
 
       </div>
-      
+      <div class="modal-purchase-notif">
+        <button class="purchase-notif__close"><img src="img/cancel.png" width="10" height="10" alt=""></button>
+        <h4>Товар добавлен в корзину.</h4>
+        <p>Вы хотите продолжить покупки или перейти в корзину?</p>
+        <div class="btn-wrp">
+          <button class="btn-red purchase-notif__close-btn">Продолжить</button>
+          <a href="basket.html" class="btn-white">В корзину</a>
+        </div>
+      </div>
+      <div class="modal-gift">
+        <button class="modal-gift__close"><img src="img/cancel.png" width="10" height="10" alt=""></button>
+        <img src="img/modal-gift.svg" alt="">
+      </div>
+      <div class="modal-bg"></div>
+      <div class="modal-sign-up">
+        <button class="modal-sign-up__close"><img src="img/cancel.png" width="10" height="10" alt=""></button>
+        <img src="img/sign-up-modal.png" alt="">
+        <div class="sign-up-wrp">
+          <h2 class="h2-left">Получи подарок</h2>
+          <p class="gift-title">Зарегестрируйся и получи <b>300 рублей</b> на первую покупку в интернет-магазине SexBomb</p>
+          <div class="promo-radio">
+              <input id="male1" class="input-radio" type="radio" name="gender" value="male">
+              <label for="male1" class="label-radio">Мужчина</label>
+              <input id="female1" class="input-radio" type="radio" name="gender" value="female">
+              <label for="female1" class="label-radio">Женщина</label>
+          </div>
+          <input type="email" class="input promo-input" placeholder="Электронная почта" required>
+          <div class="check-wrp">
+            <input id="check2" class="promo-check-input"  type="checkbox" name="check" value="check1" required>
+            <label class="promo-check-label" for="check2">Согласие на обработку персональных данных</label>
+          </div>
+            <button type="submit" disabled class="button promo-button button-red">Зарегистрироваться</button>
+        </div>
+      </div>
     </main>  
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
     <script src="js/header.js"></script>
@@ -722,6 +756,6 @@
     <script src="js/slider.js"></script>
     <script src="js/select.js"></script>
     <script src="js/slick.js"></script>
-
+    <script src="js/modal.js"></script>
   </body>
 </html>
