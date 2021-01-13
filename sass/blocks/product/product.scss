@@ -119,6 +119,13 @@
     top: 115px;
     background-color: #67B6F0;
     color: #fff;
+    cursor: pointer;
+    &:hover{
+        .product-banner--hover{
+            z-index: 3;
+            opacity: 1;
+        }
+    }
 }
 
 .product-wrp{
@@ -240,10 +247,15 @@
         margin-bottom: 50px;
     }
 }
-
+.product-text-position, .product-text-position--1{
+    margin-bottom: 20px !important;
+}
 @media(min-width: 980px){
     .product__img--active{
         width: 385px;
+    }
+    .product-text-position, .product-text-position--1{
+        margin-bottom: -40px !important;
     }
 }
 
@@ -251,3 +263,6 @@
     transition: .6s;
 }
 
+.popular-prod__wrp-2{
+    margin-bottom: 30px;
+}

@@ -33,12 +33,21 @@ document.querySelector('.modal-gift__close').onclick = function(){
 }
 
 document.querySelector('.modal-sign-up__close').onclick = function(){
-    hideModal(modalSignUp);
+    modalSignUp.classList.add('sign-up--hide');
+    
+    setTimeout(dn, 600);
+    
+}
+function dn(){
+    modalSignUp.style.display = 'none';
+    modalGift.style.display = 'none';
 }
 
 modalGift.onclick = function(){
-    modalGift.style.display = 'none';
-    showModal(modalSignUp);
+    //modalGift.style.display = 'none';
+    //showModal(modalSignUp);
+    modalGift.classList.add('modal-gift--hide');
+    modalSignUp.classList.add('sign-up--show');
 }
 
 function showModal(content) {

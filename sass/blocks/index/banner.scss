@@ -109,8 +109,13 @@
         height: 490px;
         padding: 90px 35px;
     }
-
+    .banner-1__content{
+        p{
+            max-width: 250px;
+        }
+    }
     .banner-1__content, .banner-2__content{
+        background: rgba(255, 255, 255, 0.1);
        b{
         font-size: 40px;
         line-height: 40px;
@@ -123,10 +128,21 @@
     
     }
     .banner-2__content{
+        padding-left: 50px;
+        padding-top: 30px;
+        b{
+            padding-bottom: 20px;
+        }
         span{
             text-transform: uppercase;
-            font-size: 20px;
+            font-size: 25px;
             color: #FD585E;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: -200px;
+            line-height: 0px;
+            margin-top: 20px;
+            
         }
         p{
             padding-top: 5px;
@@ -136,6 +152,6 @@
         }
     }
     .banner-2__wrp{
-        padding-top: 30px;
+        padding-top: 86px;
     }
 }

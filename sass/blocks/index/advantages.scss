@@ -67,11 +67,34 @@
         margin-bottom: 10px;
     }
     .adv-item--4{
-       padding-left: 15%;
-       margin-top: -40px;
+       
     }
     .adv-item--5{
+        
+     }
+     .adv-item--1{
+         order: 1;
+     }
+     .adv-item--5{
+        order: 2;
+    }
+    
+    .adv-item--4{
+        order: 3;
+    }
+
+    .adv-item--2{
+        order: 4;
+        h4{
+            margin-left: -10px;
+        }
+        padding-left: 15%;
+       margin-top: -40px;
+    }
+
+    .adv-item--3{
+        order: 5;
         margin-top: -40px;
         padding-right: 15%;
-     }
+    }
 }

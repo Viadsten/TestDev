@@ -51,7 +51,7 @@ input[type=checkbox] {
     transition: all 0.5s ease;
   }
   .promo-check-input:checked + label:before{
-    animation: animationBounce 0.5s;
+    animation: animationBounce 0.8s;
     background-image: url('../img/check.svg');
     background-repeat: no-repeat;
     background-position: center center;
@@ -116,7 +116,10 @@ input[type=checkbox] {
     line-height: 50px;
     font-weight: 400;
     &:disabled{
-        opacity: 0.6;
+        background-color: #E8E8E8;
+    }
+    &:hover:disabled {
+        box-shadow: none !important;
     }
 }
 
@@ -139,7 +142,7 @@ input[type=checkbox] {
     .promo{
         align-items: center;
         display: flex;
-        max-width: 1220px;
+        max-width: 1240px;
     }
     .gift-title{
         font-size: 28px;
@@ -181,6 +184,13 @@ input[type=checkbox] {
     .promo-check-input + .promo-check-label{
         line-height: 54px;
         padding-left: 70px;
+    }
+}
+
+@media(min-width:1140px){
+    .promo{
+        padding-left: 0;
+        padding-right: 0;
     }
 }
 

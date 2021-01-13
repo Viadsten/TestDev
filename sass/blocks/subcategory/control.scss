@@ -122,12 +122,14 @@
     height: 35px;
     line-height: 35px;
     border-radius: 10px;
-    background-color: #EE2D2D;
+    background-color: #FD585E;
     color: #fff;
     text-align: center;
     transition: .2s;
     &:hover{
-        box-shadow: 0 0 8px #EE2D2D;
+        border-color: #FC3F45;
+        background-color: #FC3F45;
+        font-size: 17px;
     }
 }
 
@@ -177,6 +179,7 @@
 .dots-next, .dots-prev{
     img{
         padding-bottom: 2px;
+        width: 14px;
     }
 }
 

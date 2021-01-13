@@ -192,14 +192,15 @@
   position: relative;
   span{
     position: absolute;
-    right: -5px;
+    right: -7px;
     z-index: 3;
-    width: 11px;
-    font-size: 7px;
+    top: -1px;
+    width: 14px;
+    font-size: 9px;
     color: #fff;
-    line-height: 12px;
+    line-height: 14px;
     text-align: center;
-    height: 11px;
+    height: 14px;
     border-radius: 50%;
     background-color: #FD454D;
   }
@@ -240,8 +241,15 @@
 .sticky + .product-header {
   margin-top: 102px !important;
 }
+.nav-item .nav-link{
+  font-weight: 400;
+}
 
+.nav-link--tel{
+  font-weight: 600 !important;
+}
 @media(max-width: 990px){
+  
   .navbar{
     width: 100%;
     position: fixed !important;

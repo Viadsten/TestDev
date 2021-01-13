@@ -8,7 +8,17 @@
     showTextBtn.style.display = 'none';
   }
   
+/*
+  let favorCheck = document.querySelector('.favorite-check');
+  let favorHeart = document.querySelector('.favorite-check');
+  $(favorCheck).on('click', function () {
+    $('input:checked').each(function () {
+        $(container).append( $(this).val() + " " );
+    });
+});*/
 
+let favorCheck = document.querySelectorAll('.st1');
+console.log(favorCheck)
 /*
   var promoBtn = document.querySelector('.promo-button');
   var promoCheck = document.querySelector('.promo-check-input');

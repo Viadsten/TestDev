@@ -31,11 +31,19 @@
 }
 
 #favorite-icon{
+    transition: all .3s;
     .st0{
         fill: #FD6268;
     }
     .st1{
         fill: #fff;
+    }
+}
+
+.favorite-icon--checked{
+
+    svg #favorite-icon .st1{
+        fill: #FD6268 !important;
     }
 }
 
@@ -56,6 +64,10 @@
         display: inline-block;
         max-height: 140px;
         align-self: center;
+        
+   }
+   .card-rating img{
+    margin-right: 2px;
    }
    &:hover{
         box-shadow: 0px 0px 17px rgba(253, 88, 94, 0.5);
@@ -142,8 +154,8 @@
 }
 .card{
     display: block !important;
-margin-left: auto !important;
-margin-right: auto !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
     //margin-left: 15px !important;
     margin-bottom: 20px !important;
 }
@@ -165,7 +177,13 @@ margin-right: auto !important;
         height: 400px !important;
         img{
             max-height: 200px;
+            
         }
+        .card-rating img{
+            margin-right: 3px;
+            width: 12px;
+            height: 12px;
+           }
         .card-img-wrp{
             height: 200px;
         }
@@ -180,7 +198,7 @@ margin-right: auto !important;
                 line-height: 18px;
             }
             .card-rating{
-                margin-top: 20px;
+                margin-top: 15px;
                 img{
                     width: 12px;
                     height: 12px;
