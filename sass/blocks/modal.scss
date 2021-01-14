@@ -286,7 +286,7 @@
         transform: translateY(2000px);
     }
     70% {
-        transform: translateY(-30px)
+        transform: translateY(-10px)
     }
 
     90% {
@@ -317,3 +317,10 @@
         transform: translateY(1500px);
     }
 }
+
+.slick-arrow{
+    transition: .3s;
+    outline: none !important;
+}
+
+

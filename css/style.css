@@ -672,8 +672,11 @@
     font-weight: 400;
     margin-top: 20px; }
   .category-item:hover {
-    -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.44);
-            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.44); }
+    -webkit-transform: scale(1.02);
+        -ms-transform: scale(1.02);
+            transform: scale(1.02);
+    -webkit-box-shadow: 0px 5px 20px 5px rgba(122, 122, 122, 0.24);
+            box-shadow: 0px 5px 20px 5px rgba(122, 122, 122, 0.24); }
 
 .category-wrp {
   max-width: 945px;
@@ -971,8 +974,8 @@
     -webkit-transform: translateY(2000px);
             transform: translateY(2000px); }
   70% {
-    -webkit-transform: translateY(-30px);
-            transform: translateY(-30px); }
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px); }
   90% {
     -webkit-transform: translateY(10px);
             transform: translateY(10px); }
@@ -985,8 +988,8 @@
     -webkit-transform: translateY(2000px);
             transform: translateY(2000px); }
   70% {
-    -webkit-transform: translateY(-30px);
-            transform: translateY(-30px); }
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px); }
   90% {
     -webkit-transform: translateY(10px);
             transform: translateY(10px); }
@@ -1027,6 +1030,12 @@
   100% {
     -webkit-transform: translateY(1500px);
             transform: translateY(1500px); } }
+
+.slick-arrow {
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+  outline: none !important; }
 
 .header-banner {
   width: 100%;
