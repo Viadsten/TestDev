@@ -164,7 +164,7 @@
     width: 14px;
     font-size: 9px;
     color: #fff;
-    line-height: 14px;
+    line-height: 15px;
     text-align: center;
     height: 14px;
     border-radius: 50%;
@@ -447,6 +447,14 @@
     margin-bottom: 15px; }
   .footer__2-item p {
     margin-bottom: 10px; }
+  .footer__2-item a {
+    outline: none;
+    display: block;
+    color: #fff;
+    margin-bottom: 10px; }
+    .footer__2-item a:hover {
+      text-decoration: none;
+      color: #ffdada; }
 
 .footer-social {
   width: 130px;
@@ -838,12 +846,15 @@
   .modal-gift img {
     width: 300px; }
   .modal-gift .modal-gift__close {
+    z-index: 100;
+    width: 40px;
+    height: 40px;
     position: absolute;
     background-color: rgba(0, 0, 0, 0);
     border: none;
-    right: 0;
-    opacity: 0.6;
-    top: 10px; }
+    right: -20px;
+    top: 0px;
+    opacity: 0.6; }
     .modal-gift .modal-gift__close img {
       width: 10px;
       height: 10px; }
@@ -891,6 +902,8 @@
     height: 400px;
     margin-left: -1px;
     margin-top: -1px; }
+  .modal-sign-up .modal-sign-up__close img {
+    display: block !important; }
   .modal-sign-up h2 {
     font-size: 25px !important;
     line-height: 25px !important; }
@@ -1001,10 +1014,10 @@
   0% {
     -webkit-transform: translateY(0);
             transform: translateY(0); }
-  5% {
+  8% {
     -webkit-transform: translateY(10px);
             transform: translateY(10px); }
-  70% {
+  50% {
     -webkit-transform: translateY(-30px);
             transform: translateY(-30px); }
   90% {
@@ -1018,10 +1031,10 @@
   0% {
     -webkit-transform: translateY(0);
             transform: translateY(0); }
-  5% {
+  8% {
     -webkit-transform: translateY(10px);
             transform: translateY(10px); }
-  70% {
+  50% {
     -webkit-transform: translateY(-30px);
             transform: translateY(-30px); }
   90% {
@@ -1251,18 +1264,6 @@
 .popular-prod__wrp {
   margin-left: 10px; }
 
-#favorite-icon {
-  -webkit-transition: all .3s;
-  -o-transition: all .3s;
-  transition: all .3s; }
-  #favorite-icon .st0 {
-    fill: #FD6268; }
-  #favorite-icon .st1 {
-    fill: #fff; }
-
-.favorite-icon--checked svg #favorite-icon .st1 {
-  fill: #FD6268 !important; }
-
 .card {
   display: block;
   margin-left: auto !important;
@@ -1338,6 +1339,42 @@
   .card input[type=checkbox] {
     display: none; }
 
+.not-liked, .liked {
+  position: absolute;
+  right: 0px;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s; }
+
+.liked {
+  max-height: 0px;
+  right: 10px;
+  max-width: 0px; }
+
+.favorite-check + label {
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s;
+  top: 10px;
+  right: 10px; }
+  .favorite-check + label:hover {
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
+    top: 9px;
+    right: 9px; }
+
+.favorite-check + label .liked {
+  top: -2px; }
+
+.favorite-check:checked + label .liked {
+  right: -1px;
+  max-width: 21px;
+  width: 21px;
+  height: 21px;
+  max-height: 21px;
+  top: -1px; }
+
 .card-hit {
   position: absolute;
   width: 65px;
@@ -1361,12 +1398,19 @@
   margin-bottom: 20px !important; }
 
 @media (min-width: 992px) {
+  .popular-prod__wrp .slick-list {
+    width: 95% !important;
+    margin: 0 auto; }
   .popular-prod__wrp {
     max-width: 1260px;
     margin-right: 10px;
     margin-left: 10px;
     margin-top: 70px;
     margin: 70px auto 0; }
+  .slick-prev {
+    margin-left: 20px; }
+  .slick-next {
+    margin-right: 20px; }
   .card {
     display: block;
     margin-left: auto !important;
@@ -1417,11 +1461,17 @@
   left: 0; }
 
 .popular-prod__wrp .slick-next {
-  background-image: url("../img/arrow-left.svg");
-  -webkit-transform: rotate(180Deg);
-      -ms-transform: rotate(180Deg);
-          transform: rotate(180Deg);
+  background-image: url("../img/arrow-right.svg");
+  background-repeat: no-repeat;
   right: 0; }
+
+.slick-prev:active, .slick-next:active {
+  -webkit-transform: scale(0.88);
+      -ms-transform: scale(0.88);
+          transform: scale(0.88); }
+
+.slick-prev:disabled, .slick-next:disabled {
+  opacity: .3; }
 
 @media (min-width: 1200px) {
   .popular-prod__wrp {

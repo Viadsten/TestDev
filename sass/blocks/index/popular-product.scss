@@ -30,22 +30,6 @@
     margin-left: 10px;
 }
 
-#favorite-icon{
-    transition: all .3s;
-    .st0{
-        fill: #FD6268;
-    }
-    .st1{
-        fill: #fff;
-    }
-}
-
-.favorite-icon--checked{
-
-    svg #favorite-icon .st1{
-        fill: #FD6268 !important;
-    }
-}
 
 .card{
     display: block;
@@ -135,6 +119,45 @@
     
 }
 
+
+.not-liked, .liked{
+    position: absolute;
+    right: 0px;
+    transition: .2s;
+}
+
+.liked{
+    max-height: 0px;
+    right: 10px;
+    max-width: 0px;
+}
+.favorite-check+label{
+    transition: .2s;
+    top: 10px;
+    right: 10px;
+    &:hover{
+        transform: scale(1.1);
+        top: 9px;
+        right: 9px;
+    }
+}
+.favorite-check + label{
+    .liked{
+        top: -2px;
+    }
+}
+.favorite-check:checked + label{
+    .liked{
+        
+        right: -1px;
+        max-width: 21px;
+        width: 21px;
+        height: 21px;
+        max-height: 21px;
+        top: -1px;
+    }
+}
+
 .card-hit{
     position: absolute;
     width: 65px;
@@ -161,12 +184,22 @@
 }
 
 @media(min-width: 992px){
+    .popular-prod__wrp .slick-list{
+        width: 95% !important;
+        margin: 0 auto;
+    }
     .popular-prod__wrp{
         max-width: 1260px;
         margin-right: 10px;
         margin-left: 10px;
         margin-top: 70px;
         margin: 70px auto 0;
+    }
+    .slick-prev{
+        margin-left: 20px;
+    }
+    .slick-next{
+        margin-right: 20px;
     }
     .card{
         display: block;
@@ -234,11 +267,18 @@
 }
 
 .popular-prod__wrp .slick-next{
-    background-image: url('../img/arrow-left.svg');
-    transform: rotate(180Deg);
+    background-image: url('../img/arrow-right.svg');
+    background-repeat: no-repeat;
     right: 0;
 }
-
+.slick-prev, .slick-next{
+    &:active{
+        transform: scale(0.88);
+    }
+    &:disabled{
+        opacity: .3;
+    }
+}
 @media(min-width: 1200px){
     .popular-prod__wrp{
         padding: 0 50px;

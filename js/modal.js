@@ -34,7 +34,6 @@ document.querySelector('.modal-gift__close').onclick = function(){
 
 document.querySelector('.modal-sign-up__close').onclick = function(){
     modalSignUp.classList.add('sign-up--hide');
-    
     setTimeout(dn, 600);
     
 }

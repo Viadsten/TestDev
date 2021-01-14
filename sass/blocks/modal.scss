@@ -125,12 +125,16 @@
         width: 300px;
     }
     .modal-gift__close{
+        z-index: 100;
+        width: 40px;
+        height: 40px;
         position: absolute;
         background-color: rgba($color: #000000, $alpha: 0);
         border: none;
-        right: 0;
+        right: -20px;
+        top: 0px;
         opacity: 0.6;
-        top: 10px;
+        
         img{
             width: 10px;
             height: 10px;
@@ -179,6 +183,9 @@
        height: 400px;
        margin-left: -1px;
        margin-top: -1px;
+    }
+    .modal-sign-up__close{
+        img{display: block !important;}
     }
     h2{
         font-size: 25px !important;
@@ -302,12 +309,12 @@
         transform: translateY(0);
         
     }
-    5% {
+    8% {
         transform: translateY(10px);
        
     }
 
-    70% {
+    50% {
         transform: translateY(-30px)
     }
     90%{

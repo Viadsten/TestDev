@@ -42,6 +42,17 @@
     p{
        margin-bottom: 10px; 
     }
+    a{
+        outline: none;
+        display: block;
+        color: #fff;
+        margin-bottom: 10px; 
+        &:hover{
+            text-decoration: none;
+            color: rgb(255, 218, 218);
+            
+        }
+    }
 }
 
 .footer-social{
