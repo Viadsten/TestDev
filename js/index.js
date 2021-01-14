@@ -17,8 +17,7 @@
     });
 });*/
 
-let favorCheck = document.querySelectorAll('.st1');
-console.log(favorCheck)
+
 /*
   var promoBtn = document.querySelector('.promo-button');
   var promoCheck = document.querySelector('.promo-check-input');
