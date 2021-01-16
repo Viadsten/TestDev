@@ -43,7 +43,6 @@ $('.select').each(function() {
 
                 $('select').val(chooseItem).attr('selected', 'selected');
                 selectHead.text( $(this).find('span').text() );
-
                 selectList.slideUp(duration);
                 selectHead.removeClass('on');
             });

@@ -36,7 +36,6 @@ $(document).ready(function() {
                 if (bodyHeightSorted[m] > max) max = bodyHeightSorted[m];
                 if (bodyHeightSorted[m] < min) min = bodyHeightSorted[m];
             }
-            console.log(max);
             $(afterTop).css('margin-top', (max - bodyHeight[0])* -1 + 30);
             descrBody[1].classList.add('descr-body--right');
             descrBody[2].classList.add('descr-body--right');
