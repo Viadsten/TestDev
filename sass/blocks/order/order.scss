@@ -170,7 +170,10 @@
 
 @media(min-width: 900px){
     .order-form{
+        max-width: 1240px;
         display: flex;
+        margin-right: auto;
+        margin-left: auto;
         padding: 0 20px;
     }
     .order-left{
@@ -199,6 +202,7 @@
         margin-right: 0;
     }
     .order-right{
+        margin-top: 10px;
         footer{
              button{
             width: 265px;

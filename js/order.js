@@ -53,10 +53,20 @@ let nextTab = 'order-pos--right';
 let showTab = 'order-pos--center';
 let prevTab = 'order-pos--left';
 
+
+
+//изначальное позиционирование
+navBtns[1].classList.add('order-nav__link--active');
+svgIcons[0].classList.add('svg-active');
+contentBody[0].classList.add(showTab);
+contentBody[1].classList.add(nextTab);
+$('.form-submit-btn').prop('disabled', true);
+
 //вычисление высоты блока контента для позиционирования
 for (let i = 0; i < contentBody.length; i++){
     contentHeight[i] = ($(contentBody[i]).height());
-    
+    contentBody[i].style.display = 'block';
+    contentBody[i].classList.add('order-content--transition');
     if(i > 0){
         if($(window).width() < 900) {
             $(contentBody[i]).css('margin-top', contentHeight[i-1] * -1)
@@ -67,13 +77,8 @@ for (let i = 0; i < contentBody.length; i++){
     }
 }
 
-//изначальное позиционирование
-navBtns[1].classList.add('order-nav__link--active');
-svgIcons[0].classList.add('svg-active');
-contentBody[0].classList.add(showTab);
-contentBody[1].classList.add(nextTab);
 if($(window).width() < 900) {
-        $(contentWrp).css('height', contentHeight[indexTab] + 120);
+        $(contentWrp).css('height', contentHeight[indexTab] + 50);
 }
 //$('.order-3-next-btn').prop('disabled', true);
 
@@ -126,7 +131,6 @@ let delivMethod = document.querySelectorAll('.deliv-method');
 
 for (let i = 0; i < delivBtn.length; i++){
     delivBtn[i].onclick = function(){
-        console.log(delivMethod[i]);
         $('.selected-delivery-value').html($(delivMethod[i]).text());
         FnextTab();
     }
@@ -151,16 +155,15 @@ function FnextTab(){
         if($(window).width() < 900) {
             $(contentWrp).css('height', contentHeight[indexTab] + 20);
             $('.order-nav').slick('slickGoTo', indexTab + 1);
-            console.log(contentHeight[indexTab]);
         }else{
-            $(navLine).css('width', (indexTab + 2) * 16.5 + '%')
+            $(navLine).css('width', (indexTab + 2) * 16.8 + '%')
         }
         //проверка Контактных данных
         if(indexTab == 2){
             
             //contactValid();
         }
-        
+
         if(indexTab + 1 == contentBody.length){
 
             $('.form-submit-btn').prop('disabled', false);
@@ -179,14 +182,14 @@ function FprevTab(){
     contentBody[indexTab].classList.remove(prevTab);
     if($(window).width() < 900) {
         if(indexTab == 0){
-            $(contentWrp).css('height', contentHeight[indexTab] + 120);
+            $(contentWrp).css('height', contentHeight[indexTab] + 50);
         }else{
             $(contentWrp).css('height', contentHeight[indexTab] + 20);
         }
         $('.order-nav').slick('slickGoTo', indexTab);
        
     }else{
-        $(navLine).css('width', (indexTab + 2) * 16.5 + '%')
+        $(navLine).css('width', (indexTab + 2) * 16.8 + '%')
     }
 }
 

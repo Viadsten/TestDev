@@ -39,7 +39,9 @@
             line-height: 16px;
         }
     }
-
+    .order-2-line--city{
+        padding-right: 15px;
+    }
     .order-2-line--city, .order-2-line{
         p, span{
             font-size: 16px;
@@ -67,11 +69,17 @@
 }
 
 .order-content{
-   
+   display: none;
     width: 100%;
-    transition: .5s ease-in-out;
+    
 }
 
+.order-1{
+    display: block;
+}
+.order-content--transition{
+    transition: .5s ease-in-out;
+}
 .order-delivery-btn{
     &:hover{
         .selected-city{
