@@ -42,7 +42,9 @@
     fill: #FD585E !important;
     stroke: #FD585E !important;
 }
-
+.order-nav__line{
+    display: none !important;
+}
 @media(max-width:430px){
     .order-nav__link--2{
         margin-top: 4px;
@@ -54,8 +56,8 @@
         margin-top: 0px;
     }
     .order-nav__line{
-        transition: .3s ease-in;
-        display: block;
+        transition: .5s ease-in-out;
+        display: block !important;
         position: absolute;
         bottom: -20px;
         width: 33%;

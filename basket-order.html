@@ -178,7 +178,7 @@
             <button id="order-3" class="order-nav__link"><svg width="24" height="17"><use xlink:href="#delivery-icon" ></use></svg><p>Доставка</p></button>
             <button id="order-4" class="order-nav__link"><svg width="20" height="23"><use xlink:href="#contacts-icon" ></use></svg><p>Контакты</p></button>
             <button id="order-5" class="order-nav__link order-nav__link--2"><svg width="22" height="18"><use xlink:href="#pay-method" ></use></svg><p>Способ оплаты</p></button>
-            <button id="order-6" class="order-nav__link"><svg width="20" height="23"><use xlink:href="#done-icon" ></use></svg><p>Done</p></button>
+            <button id="order-6" class="order-nav__link"><svg width="20" height="23"><use xlink:href="#done-icon" ></use></svg></button>
             <hr class="order-nav__line">
 
         </div>
@@ -208,52 +208,114 @@
                 <div class="order-2 order-content" id="order-2">
                     <div class="order-2-line--city">
                         <span class="order-2-city-img"><img src="img/geo-icon.svg" alt="marker"></span>
-                        <p>Ваш город: Санкт-Петербург</p>
-                        <button type="button" id="city-change">Изменить</button>
+                        <span class="selected-city">Ваш город:</span><p class="selected-city-value">Санкт-Петербург</p>
+                        <button type="button" id="city-change" data-tab-number="1">Изменить</button>
                     </div>
                     <p class="order-content-title">Выберите способ доставки</p>
                     <div class="order-2-line">
-                        <p>Самовывоз из пункта выдачи</p>
+                        <p class="deliv-method">Самовывоз из пункта выдачи</p>
                         <button type="button" id="pick-up" class="order-delivery-btn">Подробнее</button>
                     </div>
                     <div class="order-2-line">
-                        <p>Курьерская доставка (2-3 дня)</p>
+                        <p class="deliv-method">Курьерская доставка (2-3 дня)</p>
                         <button type="button" id="delivery" class="order-delivery-btn">Подробнее</button>
                     </div>
                     <div class="order-2-line">
-                        <p>Постамат</p>
+                        <p class="deliv-method">Постамат</p>
                         <button type="button" id="Postamat" class="order-delivery-btn">Подробнее</button>
                     </div>
                     <div class="order-2-line">
-                        <p>Почта России</p>
+                        <p class="deliv-method">Почта России</p>
                         <button type="button" id="mail-Russ" class="order-delivery-btn">Подробнее</button>
                     </div>
                 </div>
-                <div class="order-2 order-content order-pos--right" id="order-2">
+                <div class="order-3 order-content order-pos--right" id="order-3">
                     <div class="order-2-line--city">
                         <span class="order-2-city-img"><img src="img/geo-icon.svg" alt="marker"></span>
-                        <p>Ваш город: Санкт-Петербург</p>
-                        <button type="button" id="city-change">Изменить</button>
+                        <span class="selected-city">Ваш город:</span><p class="selected-city-value">Санкт-Петербург</p>
+                        <button type="button" id="city-change" data-tab-number="3">Изменить</button>
                     </div>
-                    <p class="order-content-title">Выберите способ доставки</p>
-                    <div class="order-2-line">
-                        <p>Самовывоз из пункта выдачи</p>
-                        <button type="button" id="pick-up">Подробнее</button>
+                    <div class="order-2-line--city">
+                        <span class="order-2-city-img"><img src="img/deliv-icon.svg" alt="marker"></span>
+                        <span class="selected-city">Доставка:</span><p class="selected-delivery-value">Санкт-Петербург</p>
+                        <button type="button" id="city-change" data-tab-number="2">Изменить</button>
                     </div>
-                    <div class="order-2-line">
-                        <p>Курьерская доставка (2-3 дня)</p>
-                        <button type="button" id="delivery">Подробнее</button>
-                    </div>
-                    <div class="order-2-line">
-                        <p>Постамат</p>
-                        <button type="button" id="Postamat">Подробнее</button>
-                    </div>
-                    <div class="order-2-line">
-                        <p>Почта России</p>
-                        <button type="button" id="mail-Russ">Подробнее</button>
+                    <div class="order-3-input-wrp">
+                        <p class="order-content-title">Заполните контактные данные</p>
+                        <input type="text" id="order-3-input" class="input" placeholder="Ваше имя" required>
+                        <input type="tel" id="order-3-input" class="input" placeholder="+7 (__) ___-__-__" required>
+                        <input type="email" id="order-3-input" class="input" placeholder="E-mail" required>
+                        <input type="text" id="order-3-input" class="input" placeholder="Адрес доставки" required>
+                        <input type="text" id="order-3-input" class="input" placeholder="Почтовый индекс" required>
+                        <textarea name="comment" class="input" placeholder="Комментарий"></textarea>
+                        <div class="order-3-input-footer">
+                            <div class="check-wrp">
+                                <input id="check2" class="promo-check-input"  type="checkbox" name="check" value="check1" required>
+                                <label class="promo-check-label" for="check2">Согласие на обработку персональных данных</label>
+                            </div>
+                            <button class="form-red-btn order-3-next-btn" type="button">Продолжить</button>
+
+                        </div>
                     </div>
                 </div>
-                
+                <div class="order-4 order-content order-pos--right" id="order-4">
+                    <div class="order-2-line--city">
+                        <span class="order-2-city-img"><img src="img/geo-icon.svg" alt="marker"></span>
+                        <span class="selected-city">Ваш город:</span><p class="selected-city-value">Санкт-Петербург</p>
+                        <button type="button" id="city-change" data-tab-number="5">Изменить</button>
+                    </div>
+                    <div class="order-2-line--city">
+                        <span class="order-2-city-img"><img src="img/deliv-icon.svg" alt="marker"></span>
+                        <span class="selected-city">Доставка:</span><p class="selected-delivery-value">Санкт-Петербург</p>
+                        <button type="button" id="city-change" data-tab-number="4">Изменить</button>
+                    </div>
+                    <div class="order-2-line--city">
+                        <span class="order-2-city-img"><img src="img/contact-icon.svg" alt="marker"></span>
+                        <span class="selected-city">Контакты:</span><p class="selected-tel-value">Санкт-Петербург</p>
+                        <button type="button" id="city-change" data-tab-number="3">Изменить</button>
+                    </div>
+                    <div class="order-4-input-wrp">
+                        <p class="order-content-title">Выберите способ оплаты</p>
+                        <div class="order-2-line">
+                            <p class="pay-method">Онлайн оплата</p>
+                            <button type="button" id="pay" class="order-pay-btn">Подробнее</button>
+                        </div>
+                        <div class="order-4--subline">
+                            <span>Visa<img src="img/visa-icon.svg" alt=""></span>
+                            <span>Mastercard<img src="img/master-card.svg" alt=""></span>
+                        </div>
+                        <div class="order-2-line">
+                            <p class="pay-method">Наличными при получении</p>
+                            <button type="button" id="pay" class="order-pay-btn">Подробнее</button>
+                        </div>
+                        <div class="order-2-line">
+                            <p class="pay-method">Банковской картой при получении</p>
+                            <button type="button" id="pay" class="order-pay-btn">Подробнее</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="order-5 order-content order-pos--right" id="order-4">
+                    <div class="order-2-line--city">
+                        <span class="order-2-city-img"><img src="img/geo-icon.svg" alt="marker"></span>
+                        <span class="selected-city">Ваш город:</span><p class="selected-city-value">Санкт-Петербург</p>
+                        <button type="button" id="city-change" data-tab-number="7">Изменить</button>
+                    </div>
+                    <div class="order-2-line--city">
+                        <span class="order-2-city-img"><img src="img/deliv-icon.svg" alt="marker"></span>
+                        <span class="selected-city">Доставка:</span><p class="selected-delivery-value">Санкт-Петербург</p>
+                        <button type="button" id="city-change" data-tab-number="6">Изменить</button>
+                    </div>
+                    <div class="order-2-line--city">
+                        <span class="order-2-city-img"><img src="img/contact-icon.svg" alt="marker"></span>
+                        <span class="selected-city">Контакты:</span><p class="selected-tel-value">Санкт-Петербург</p>
+                        <button type="button" id="city-change" data-tab-number="5">Изменить</button>
+                    </div>
+                    <div class="order-2-line--city">
+                        <span class="order-2-city-img"><img src="img/contact-icon.svg" alt="marker"></span>
+                        <span class="selected-city">Способ оплаты:</span><p class="selected-pay-value">Санкт-Петербург</p>
+                        <button type="button" id="city-change" data-tab-number="4">Изменить</button>
+                    </div>
+                </div>
             </div>
 
 
@@ -281,9 +343,9 @@
                         <b><span class="order-total-amount">300Р</span></b>
                         <div class="total-amount-del"><img src="img/cancel.png" width="10" height="10" alt=""></div>
                     </div>
-                    <span class="order-right-bonus"><img src="img/bonus-icon.png" alt=""><i class="bonus-count">+ 0 </i>будет начислено за покупку <img class="i-right" src="img/carbon_information.svg"></span>
+                    <span class="order-right-bonus"><img src="img/bonus-icon.png" alt=""><i class="bonus-count">+ 0</i> будет начислено за покупку <img class="i-right" src="img/carbon_information.svg"></span>
                     <footer>
-                        <button type="submit" disabled class="form-red-btn">Подтвердить заказ</button>
+                        <button type="submit" disabled class="form-red-btn form-submit-btn">Подтвердить заказ</button>
                     </footer>
                 </body>
                 

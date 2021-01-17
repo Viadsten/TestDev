@@ -1,5 +1,4 @@
 
-$(document).ready(function () {
 $('.select').each(function() {
     const _this = $(this),
         selectOption = _this.find('option'),
@@ -52,5 +51,4 @@ $('.select').each(function() {
             selectList.slideUp(duration);
         }
     });
-});
 });
