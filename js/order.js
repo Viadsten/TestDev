@@ -156,6 +156,28 @@ for (let i = 0; i < navBtns.length; i++){
     }
 }
 
+//отслеживаем чекбокс в контактных данных
+let orderCheck = document.querySelector('.order-check');
+orderCheck.onclick = function() {
+    contactValid() ; 
+}
+
+//далее в контактных д
+let nextBtn3 = document.querySelector('.order-3-next-btn')
+nextBtn3.onclick = function(){
+    FnextTab();    
+    
+}
+
+//обработчик способов оплаты
+let payBtn = document.querySelectorAll('.order-pay-btn');
+let payMethod = document.querySelectorAll('.pay-method');
+for (let i = 0; i < payBtn.length; i++){
+    payBtn[i].onclick = function(){
+        $('.selected-pay-value').html($(payMethod[i]).text());
+        FnextTab();
+    }
+}
 
 //обработчик нажатия для ДОСТАВКИ (изменить переменную delivBtn)
 let delivBtn = document.querySelectorAll('.order-delivery-btn');
@@ -167,6 +189,7 @@ for (let i = 0; i < delivBtn.length; i++){
         FnextTab();
     }
 }
+
 
 let x = 0;
 //переключение вперед
@@ -296,31 +319,6 @@ function contactValid(){
         }
 }
 
-let orderCheck = document.querySelector('.order-check');
-orderCheck.onclick = function() {
-    contactValid() ; 
-}
 
-let nextBtn3 = document.querySelector('.order-3-next-btn')
-nextBtn3.onclick = function(){
-    FnextTab();    
-    
-}
-
-let payBtn = document.querySelectorAll('.order-pay-btn');
-let payMethod = document.querySelectorAll('.pay-method');
-for (let i = 0; i < payBtn.length; i++){
-    payBtn[i].onclick = function(){
-        $('.selected-pay-value').html($(payMethod[i]).text());
-        FnextTab();
-    }
-}
-
-/*
-if ($(contactInputs[i]).val() === ''){
-    //Упс, проверьте введенные данные
-}else{
-    valid = true;
-}*/
 
 });

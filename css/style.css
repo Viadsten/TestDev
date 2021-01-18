@@ -4017,8 +4017,7 @@ input[type=checkbox] {
 
 .order-nav__link--active {
   color: #FD585E;
-  fill: #FD585E;
-  stroke: #FD585E; }
+  fill: #FD585E; }
   .order-nav__link--active:hover {
     text-decoration: none;
     color: #fc8a8e !important; }
