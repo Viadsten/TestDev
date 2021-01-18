@@ -243,7 +243,13 @@
                     <div class="order-3-input-wrp">
                         <p class="order-content-title">Заполните контактные данные</p>
                         <input type="text" id="order-3-input" class="input" placeholder="Ваше имя" required>
-                        <input type="tel" id="order-3-input" class="input" placeholder="+7 (__) ___-__-__" required>
+                        <input id="order-3-input" class="input phone-field" placeholder="+7 (__) ___-__-__" required
+                        type="text" 
+                        name="phone" 
+                        data-rule-required="true" 
+                        data-rule-minlength="10" 
+                        data-msg="Введите номер телефона"
+                        >
                         <input type="email" id="order-3-input" class="input" placeholder="E-mail" required>
                         <input type="text" id="order-3-input" class="input" placeholder="Адрес доставки" required>
                         <input type="text" id="order-3-input" class="input" placeholder="Почтовый индекс" required>
@@ -522,6 +528,8 @@
     </main>  
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
     <script src="plagins/slick.js"></script>
+    <script src="plagins/inputmask.js"></script>
+    <script src="plagins/telvalidate.js"></script>
     <script src="js/header.js"></script>
     <script src="js/modal.js"></script>
     <script src="js/select.js"></script>

@@ -1,5 +1,5 @@
 
- $(document).ready(function() {
+$(document).ready(function() {
 if ($(window).width() < 900) {
 $(window).on("load resize", function(){
     var width = $(document).width();
@@ -118,8 +118,13 @@ for (let i = 0; i < navBtns.length; i++){
                 if ($(contactInputs[i]).val() === ''){
                     contactInputs[i].classList.add('order-2-line--error');
                 }
-
             }
+            if ( mailCheck() == false){
+                contactInputs[2].classList.add('order-2-line--error');
+            }
+           
+            
+
         }
         //проверка заполнения оплаты
         
@@ -296,19 +301,19 @@ for(let i = 0; i < contactInputs.length; i++){
             contactInputs[i].classList.remove('order-2-line--error');
         }
         contactValid() ;    
+        
     }
 }
 
-//валидация order3
+//валидация конт данных
 function contactValid(){
     $('.selected-tel-value').html($(contactInputs[1]).val());
         for(let i = 0; i < contactInputs.length; i++){
             if($(contactInputs[i]).val() !== ''){
                 contactInputs[i].classList.remove('order-2-line--error');
             }
-            if ($(contactInputs[i]).val() !== '' && $('.order-check').is(':checked')){
+            if ($(contactInputs[i]).val() !== '' && $('.order-check').is(':checked') && mailCheck() == true){
                 $('.order-3-next-btn').prop('disabled', false);
-                
                 
             }else{
                 $('.order-3-next-btn').prop('disabled', true);
@@ -320,5 +325,23 @@ function contactValid(){
 }
 
 
+//mail валид
+
+function mailCheck(){
+    let re = /^[\w-\.]+@[\w-]+\.[a-z]{2,4}$/i;
+    let myMail = contactInputs[2].value;
+    let valid = re.test(myMail);
+    if (valid) return(true);
+    else return(false);
+}
+
+var form = $('.phone-field');
+$('.phone-field').inputmask("+7 (999) 999-99-99");
+    
+    // добавляем правило для валидации телефона
+   
+    // получаем нашу форму по cl
+    
 
 });
+
