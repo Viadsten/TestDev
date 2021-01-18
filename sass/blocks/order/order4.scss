@@ -25,4 +25,19 @@
     .order-3{
         padding-top: 10px;
     }
+    .order-5{
+        padding-top: 10px;
+    }
+}
+
+
+.input--error{
+    border-color: #FD585E !important;
+    //color: #FD585E !important;
+}
+.order-2-line--delivery{
+    transition: .3s;
+}
+.order-2-line--error{
+    border-color: #ffa1a4 !important;
 }

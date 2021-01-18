@@ -3224,6 +3224,22 @@ input[type=checkbox] {
 .basket-card {
   margin-bottom: 20px; }
 
+.basket-footer {
+  width: 90%;
+  margin: 0 auto; }
+  .basket-footer .fotm-inp-btn-wrp input {
+    width: 100%; }
+  .basket-footer .fotm-inp-btn-wrp a {
+    width: 100%;
+    display: block;
+    text-align: center; }
+    .basket-footer .fotm-inp-btn-wrp a:hover {
+      color: #fff;
+      text-decoration: none; }
+  .basket-footer .order-right-bonus {
+    background-color: #fff;
+    margin-top: 0; }
+
 @media (min-width: 500px) {
   .basket-header {
     font-size: 18px; }
@@ -3282,7 +3298,28 @@ input[type=checkbox] {
     margin-bottom: 45px; }
   .basket-body-cost {
     font-size: 20px;
-    line-height: 18px; } }
+    line-height: 18px; }
+  .basket-footer {
+    width: 90%;
+    margin-left: auto;
+    margin-right: 15px;
+    max-width: 430px; }
+    .basket-footer .fotm-inp-btn-wrp input {
+      width: 52%; }
+    .basket-footer .fotm-inp-btn-wrp button, .basket-footer .fotm-inp-btn-wrp a {
+      margin-left: auto;
+      width: 45%; }
+    .basket-footer .basket-form-price-wrp {
+      margin-top: 0; }
+      .basket-footer .basket-form-price-wrp i {
+        text-align: center;
+        font-weight: 500;
+        font-size: 25px;
+        margin-top: -4px; }
+    .basket-footer .order-right-bonus {
+      margin-bottom: 20px;
+      background-color: #fff;
+      margin-top: 0; } }
 
 @media (min-width: 1240px) {
   .basket-prod-wrp {
@@ -3916,7 +3953,20 @@ input[type=checkbox] {
   .order-4 {
     padding-top: 10px; }
   .order-3 {
+    padding-top: 10px; }
+  .order-5 {
     padding-top: 10px; } }
+
+.input--error {
+  border-color: #FD585E !important; }
+
+.order-2-line--delivery {
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s; }
+
+.order-2-line--error {
+  border-color: #ffa1a4 !important; }
 
 .order-nav-wrapper {
   margin-top: 0px;
@@ -3934,6 +3984,7 @@ input[type=checkbox] {
           justify-content: space-between; }
 
 .order-nav__link {
+  outline: none !important;
   margin-top: 15px;
   display: -webkit-box !important;
   display: -ms-flexbox !important;
@@ -3965,7 +4016,9 @@ input[type=checkbox] {
   opacity: .7; }
 
 .order-nav__link--active {
-  color: #FD585E; }
+  color: #FD585E;
+  fill: #FD585E;
+  stroke: #FD585E; }
   .order-nav__link--active:hover {
     text-decoration: none;
     color: #fc8a8e !important; }

@@ -7,11 +7,13 @@
 }
 
 .order-nav{
+    
     max-width: 1140px;
     display: flex;
     justify-content: space-between;
 }
 .order-nav__link{
+    outline: none !important;
     margin-top: 15px;
     display: flex !important;
     align-items: center;
@@ -44,6 +46,8 @@
 
 .order-nav__link--active{
     color: #FD585E;
+    fill: #FD585E;
+    stroke: #FD585E;
     &:hover{
         text-decoration: none;
         color: #fc8a8e !important;

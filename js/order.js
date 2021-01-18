@@ -38,7 +38,7 @@ $(window).on("load resize", function(){
     }
   });
 }
-let contentWrp = document.querySelector('.order-left');
+let contentWrp = document.querySelector('.order-left'); 
 let contentBody = document.querySelectorAll('.order-content'); 
 let nextBtn = document.querySelector('.order-next-btn');
 let contentHeight = [];
@@ -61,6 +61,8 @@ svgIcons[0].classList.add('svg-active');
 contentBody[0].classList.add(showTab);
 contentBody[1].classList.add(nextTab);
 $('.form-submit-btn').prop('disabled', true);
+$('.order-3-next-btn').prop('disabled', true);
+$(nextBtn).prop('disabled', true);
 
 //вычисление высоты блока контента для позиционирования
 for (let i = 0; i < contentBody.length; i++){
@@ -96,15 +98,45 @@ for (let i = 0; i < CityBack.length; i++){
     }
 }
 
-
 //обработчик нажатия на навигацию
 for (let i = 0; i < navBtns.length; i++){
     navBtns[i].onclick = function(){
+        console.log($('.selected-pay-value').text());
         selectCheck(x);
         if (selectCheck(x) == 0){
             //уведомляшка прии ошибке ввода!
         }
+        //проверка заполнения доставки
+        else if(i > 2 && $('.selected-delivery-value').text() === ''){
+            for(let i = 0; i < $('.order-2-line--delivery').length; i++){
+                $('.order-2-line--delivery')[i].classList.add('order-2-line--error')
+            }
+        }
+        //проверка заполнения контактов
+        else if(i > 3 && contactValid() == false){
+            for(let i = 0; i < contactInputs.length; i++){
+                if ($(contactInputs[i]).val() === ''){
+                    contactInputs[i].classList.add('order-2-line--error');
+                }
+
+            }
+        }
+        //проверка заполнения оплаты
+        
+        else if(i == 5 && $('.selected-pay-value').text() === ''){
+            console.log('fck');
+
+            for(let i = 0; i < $('.order-2-line--pay').length; i++){
+                $('.order-2-line--pay')[i].classList.add('order-2-line--error')
+            }
+        }
         else{
+            for(let i = 0; i < $('.order-2-line--delivery').length; i++){
+                $('.order-2-line--delivery')[i].classList.remove('order-2-line--error')
+            }
+            for(let i = 0; i < $('.order-2-line--pay').length; i++){
+                $('.order-2-line--pay')[i].classList.remove('order-2-line--error')
+            }
             if (navBtns[i].classList.contains('order-nav__link--active') && (i == indexTab + 1)){
                 //уведомляшка прии ошибке ввода!
             }else if(i < indexTab + 1){
@@ -160,7 +192,7 @@ function FnextTab(){
         }
         //проверка Контактных данных
         if(indexTab == 2){
-            
+            console.log('zashel');
             //contactValid();
         }
 
@@ -195,9 +227,11 @@ function FprevTab(){
 
 //проверка заполения select
 let selectValue = $(".new-select");
+let selectInput = $('.select');
 function selectCheck(x){
     for(let i = 0; selectValue.length > i; i++){
         if (($(selectValue[i]).text()  == 'Регион')||($(selectValue[i]).text()  == 'Город')){
+           
             $(nextBtn).prop('disabled', true);
             x = 0;
             break;
@@ -209,7 +243,6 @@ function selectCheck(x){
     }
     return x;
 }
-selectCheck(x);
 
 //отслеживание выбора для disabled кнопки
 let selectValueItem = $(".new-select__item");
@@ -233,27 +266,39 @@ function nextSelect(){
 
 //проверка контактных данных (order3)
 let contactInputs = document.querySelectorAll('#order-3-input');
-function contactValid(){
-    let valide = false;
-    for (let i =0; i < contactInputs.length; i++){        
-        if (!$(contactInputs[i]).is(":focus")){
-            console.log('Not focused');
-       }
+
+for(let i = 0; i < contactInputs.length; i++){
+    contactInputs[i].onblur = function() {
+        if($(contactInputs[i]).val() !== ''){
+            contactInputs[i].classList.remove('order-2-line--error');
+        }
+        contactValid() ;    
     }
 }
 
-for(let i = 0; i < contactInputs.length; i++){
-    
-    contactInputs[1].onblur = function() {
-        if ($(contactInputs[1]).val() === ''){
-            //Упс, проверьте введенные данные
-            $('.order-3-next-btn').prop('disabled', true);            
-        }else{
-            //valid = true;
-            $('.order-3-next-btn').prop('disabled', false);
-            $('.selected-tel-value').html($(contactInputs[1]).val());
+//валидация order3
+function contactValid(){
+    $('.selected-tel-value').html($(contactInputs[1]).val());
+        for(let i = 0; i < contactInputs.length; i++){
+            if($(contactInputs[i]).val() !== ''){
+                contactInputs[i].classList.remove('order-2-line--error');
+            }
+            if ($(contactInputs[i]).val() !== '' && $('.order-check').is(':checked')){
+                $('.order-3-next-btn').prop('disabled', false);
+                
+                
+            }else{
+                $('.order-3-next-btn').prop('disabled', true);
+                
+                return false;                
+            }
+            
         }
-    }
+}
+
+let orderCheck = document.querySelector('.order-check');
+orderCheck.onclick = function() {
+    contactValid() ; 
 }
 
 let nextBtn3 = document.querySelector('.order-3-next-btn')
