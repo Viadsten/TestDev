@@ -3597,7 +3597,8 @@ input[type=checkbox] {
       width: calc(100% + 10px); }
 
 .order-left {
-  width: 90%;
+  width: 100%;
+  padding: 0 20px;
   margin: 0 auto;
   -webkit-transition: .3s;
   -o-transition: .3s;
