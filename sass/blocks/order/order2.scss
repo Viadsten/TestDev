@@ -77,6 +77,11 @@
 .order-1{
     display: block;
 }
+@media(max-width:700px){
+    .order-content--transition{
+        transition: .1s;
+    }
+}
 .order-content--transition{
     transition: .5s ease-in-out;
 }
