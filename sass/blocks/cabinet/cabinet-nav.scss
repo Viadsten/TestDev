@@ -1,0 +1,49 @@
+.h2-left--cabinet{
+    color: #313131 !important;
+    margin-top: -25px !important;
+    margin-left: 15px;
+}
+
+.svg-icon--order{
+    fill: #313131;
+   // stroke: #313131;
+}
+
+#bonus-icon, #exit-icon{
+    stroke: #313131;
+}
+.cabinet-nav{
+    background: #F8F8F8;
+    border-radius: 10px;
+    width: 265px;
+    margin: 20px;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+
+.cabinet-nav__btn{
+    font-size: 18px;
+    line-height: 21px;
+    border: none;
+    background-color: rgba(255, 25, 25, 0);
+    display: flex;
+    color: #595959;
+    margin-top: 3px;
+    &:hover{
+        color: #FD585E;
+    }
+    svg{
+        margin-right: 15px;
+        margin-top: -1px;
+    }
+}
+
+.cabinet-nav__btn--active{
+    color: #FD585E;
+    text-decoration: underline;
+    svg{
+        fill: #FD585E !important;
+        stroke: #FD585E;
+    }
+}

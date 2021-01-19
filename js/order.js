@@ -129,7 +129,6 @@ for (let i = 0; i < navBtns.length; i++){
         //проверка заполнения оплаты
         
         else if(i == 5 && $('.selected-pay-value').text() === ''){
-            console.log('fck');
 
             for(let i = 0; i < $('.order-2-line--pay').length; i++){
                 $('.order-2-line--pay')[i].classList.add('order-2-line--error')
@@ -299,6 +298,9 @@ for(let i = 0; i < contactInputs.length; i++){
     contactInputs[i].onblur = function() {
         if($(contactInputs[i]).val() !== ''){
             contactInputs[i].classList.remove('order-2-line--error');
+        }
+        if(i == 2 && mailCheck() == false){
+            contactInputs[2].classList.add('order-2-line--error');
         }
         contactValid() ;    
         
