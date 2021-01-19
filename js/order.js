@@ -299,7 +299,7 @@ for(let i = 0; i < contactInputs.length; i++){
         if($(contactInputs[i]).val() !== ''){
             contactInputs[i].classList.remove('order-2-line--error');
         }
-        if(i == 2 && mailCheck() == false){
+        if(i == 2 && $(contactInputs[2]).val() !== '' && mailCheck() == false){
             contactInputs[2].classList.add('order-2-line--error');
         }
         contactValid() ;    
