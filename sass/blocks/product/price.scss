@@ -210,3 +210,35 @@
 
     }
 }
+
+
+
+.favorite-check-prod+label{
+    margin-top: -15px;
+    position: relative;
+    transition: .2s;
+    top: 0px;
+    right: 0px;
+    &:hover{
+        transform: scale(1.1);
+        top: -1px;
+        right: -1px;
+    }
+}
+.favorite-check-prod + label{
+    .liked{
+        top: 10px;
+        right: 13px;
+    }
+}
+.favorite-check-prod:checked + label{
+    .liked{
+        
+        right: -1px;
+        max-width: 27px;
+        width: 27px;
+        height: 27px;
+        max-height: 27px;
+        top: -1px;
+    }
+}
