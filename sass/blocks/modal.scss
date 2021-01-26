@@ -257,6 +257,21 @@
         }
 }
 
+@media(min-width:900px){
+    
+    .modal-sign-up{
+        width: 100%;
+        top: 100%;
+        margin-top: -430px;
+        margin-bottom: 0;
+        left: 0%;
+        margin-left: 20px;
+        img{
+            display: block; 
+         }
+        }
+}
+
 .modal-purchase-notif--show{
     z-index: 110;
     opacity: 1;
@@ -265,6 +280,9 @@
 @media(min-width:1240px){
     .modal-gift{
         
+        left: calc(50% - 640px);
+    }
+    .modal-sign-up{
         left: calc(50% - 640px);
     }
 }

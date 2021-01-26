@@ -12,10 +12,36 @@
     //justify-content: space-between;
     align-items: center;
     height: 50px;
+    color: rgba(49, 49, 49, 0.8);
     font-size: 14px;
     p{
         margin-bottom: 0;
     }
+}
+
+.basket-amount-wrp{
+    display: flex;
+    height: 40px;
+    margin-top: -30px;
+    width: 55%;
+    justify-content: space-between;
+    padding-right: 0px;
+    align-items: center;
+    position: relative;
+    padding-right: 20px;
+    button{
+        border: none;
+        background-color: rgba($color: #000000, $alpha: 0);
+        position: absolute;
+        margin-top: -26px;
+        right: 0;
+    }
+    p{
+        margin-bottom: 0;
+    }
+}
+.basket-card--empty{
+    width: 30%;
 }
 .h2-basket{
     padding-left: 15px;
@@ -44,7 +70,7 @@
     }
 }
 .basket-counter, .basket-cost-wrp{
-    margin-top: 20px;
+    margin-top: -10px;
 }
 .basket-card-name{
     width: 55%;
@@ -60,9 +86,9 @@
     font-style: normal;
 }
 .basket-counter, .basket-cost-wrp{
-    padding-bottom: 33px;
 }
 .basket-counter{
+    margin-top: 20px;
     width: 30%;
     display: flex;
     justify-content: center;
@@ -76,8 +102,10 @@
     padding-right: 20px;
     width: 55%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    position: relative;
     p{
         margin-bottom: 0;
     }
@@ -85,22 +113,63 @@
         border: none;
         background-color: #fff;
         width: 20px;
+        position: absolute;
     }
 }
 
 .basket-header{
     display: none;
 }
-
-.basket-body-cost{
-    font-weight: 600;
-    font-size: 20px;
+.baskes-del-btn{
+    margin-top: -35px;
 }
-
+.order-nav__link{
+    &:hover{
+        opacity: 0.6;
+        color: inherit;
+        text-decoration: none;
+    }
+}
+.order-nav--basket{
+    overflow: hidden;
+    width: 700px;
+    display: flex;
+    padding-left: 20px;
+    justify-content: space-between;
+}
+.basket-body-amount{
+   // width: 100px;
+    font-weight: 600;
+    font-size: 19px;
+    span{
+        font-size: 16px;
+    }
+}
+.basket-body-cost-mobile, .basket-body-amount-mobile{
+    width:60px;
+    height: 20px;
+    display: inline-block;
+}
+.basket-body-amount{
+    width: 100px;
+}
 .basket-card{
     margin-bottom: 20px;
 }
-
+.basket-body-cost{
+    width: 100%;
+    position: relative;
+    
+}
+.basket-card-old-price{
+    position: absolute;
+    left: 0px;
+    text-align: center;
+    font-size: 14px;
+    top: -18px;
+    color: #FD585E;
+    text-decoration: line-through;
+}
 .basket-footer{
     width: 90%;
     margin: 0 auto;
@@ -124,7 +193,7 @@
     }
 }
 
-@media(min-width: 500px){
+@media(min-width: 490px){
     .basket-header{
         font-size: 18px;
     }
@@ -139,9 +208,15 @@
         font-size: 18px;
     }
 }
-
+.basket-prod-cost{
+    display: inline-block;
+}
+.basket-body-cost{
+    width: 100px;
+    display: inline-block;
+}
 @media(min-width: 750px){
-    .basket-header{
+   /* .basket-header{
         display: flex;
         .header-img-cell{
             width: 140px;
@@ -227,7 +302,7 @@
             background-color: #fff;
             margin-top: 0;
         }
-    }
+    }*/
 }
 
 @media(min-width:1240px){
@@ -287,7 +362,140 @@
     }
 }
 
-@media(min-width:600px){
+@media(min-width:700px){
+    .basket-header{
+        margin-bottom: 20px;
+        display: flex;
+        //padding-left: 10px;
+        .header-img-cell{
+            width: 101px;
+        }
+        .basket-header-name{
+            width: 30%;
+        }
+        .basket-header-cost{
+            text-align: center;
+            width: 12%;
+        }
+        .basket-header-quantity{
+            width: 110px;
+        }
+        .basket-header-price{
+            width: 14%;
+        }
+        justify-content: space-around;
+    }
+    .basket-img-wrp{
+        order: 1;
+        max-width: 101px;
+    }
+    .basket-card-name{
+        width: 30%;
+        font-size: 14px;
+        order: 2;
+        margin-bottom: 0;
+    }
+    .basket-body-cost{
+        width: 100%;
+    }
+    .basket-cost-wrp{
+        text-align: center;
+        padding-right: 0;
+        width: 12%;
+        order: 3;
+        .basket-body-cost-mobile{
+            display: none;
+        }
+        .basket-card-old-price{
+            position: relative;
+            margin-top: -22px;
+        }
+    }
+    .baskes-del-btn{
+        margin-top: -4px !important;
+    }
+    .basket-card--empty{
+        display: none;
+    }
+    .basket-counter, .basket-cost-wrp {
+        margin-top: 0px;
+    }
+    .basket-counter{
+        
+        order: 4;
+        width: 110px;
+        margin-top: 0;
+    }
+    .basket-amount-wrp{
+        padding-right: 0;
+        order: 5;
+        width: 14%;
+        .basket-body-amount-mobile{
+            display: none;
+        }
+    }
+    .basket-amount-wrp{
+        margin-top: 0;
+    }
+
+
+
+    .basket-footer{
+        width: 440px;
+        margin-right: 25px;
+    }
+
+    .fotm-inp-btn-wrp{
+        justify-content: space-between;
+        a{
+            width: 205px !important;
+            margin-left: auto;
+        }
+        button{
+            margin-left: auto !important;
+            width: 205px;
+            display: inline-block;
+
+            max-width: 205px !important;
+        }
+        input{
+            width: 181px !important;
+        }
+    }
+    .basket-form-price-wrp{
+        display: flex;
+        justify-content: space-between;
+        .cost-amount{
+            width: 205px;
+            text-align: center;
+        }
+    }
+    .basket-body .order-right-bonus{
+        //width: 440px !important;
+        padding-right: 0;
+        padding-left: 0;
+        margin-left: 0;
+        margin-bottom: 10px !important;
+        margin-top: -10px !important;
+        padding: 0;
+        background-color: rgba($color: #000000, $alpha: 0);
+        margin-left: -37px !important;
+    }
+    .cost-amount{
+        font-size: 25px !important;
+        line-height: 25px;
+        font-weight: 400;
+    }
+    .basket-card-name{
+        padding-right: 0;
+    }
+    /*
+    .basket-body-cost{
+        //width: 42%;
+    }
+    .baskes-del-btn{
+        margin-top: -2px;
+    }
     .modal.show .basket-modal-content{
         max-width: 700px;
         width: 90%;
@@ -318,5 +526,14 @@
             color: #FD585E;
             font-weight: 500;
         }
+    }*/
+}
+
+@media(min-width: 900px){
+    .basket-card-name, .basket-header .basket-header-name{
+        width: 35%;
+    }
+    .basket-cost-wrp p{
+        font-size: 20px;
     }
 }

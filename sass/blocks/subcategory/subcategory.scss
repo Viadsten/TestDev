@@ -20,6 +20,13 @@
         content: '';
     }
 }
+.subcatalog__item{
+    color: #313131;
+    &:hover{
+        color: #FD585E;
+        text-decoration: none;
+    }
+}
 .category-page__wrp{
     padding: 0 20px;
     display: flex;

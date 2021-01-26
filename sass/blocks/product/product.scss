@@ -72,6 +72,7 @@
     background-position: center;
     width: 100%;
     height: 30px;
+    margin-left: 0;
     background-repeat: no-repeat;
     background-image: url('../img/product-arrow.svg');
     background-position: center;
@@ -133,6 +134,11 @@
 }
 
 @media (min-width:750px){
+    .product__img-scroll{
+        .slick-list{
+           margin-top: 6px; 
+        }
+    }
     .product-wrp{
         max-width: 1260px;
         margin: 0 auto;
@@ -223,7 +229,7 @@
     }
 
     .img-scroll__wrp {
-        margin-left: 6px;
+        margin-left: 8px;
         width: 100%;
         max-width: 80px;
         height: 121px !important;

@@ -185,7 +185,7 @@
 
 @media(min-width: 992px){
     .popular-prod__wrp .slick-list{
-        width: 95% !important;
+        width: 100% !important;
         margin: 0 auto;
     }
     .popular-prod__wrp{
@@ -196,10 +196,10 @@
         margin: 70px auto 0;
     }
     .slick-prev{
-        margin-left: 20px;
+        margin-left: 10px;
     }
     .slick-next{
-        margin-right: 20px;
+        margin-right: 10px;
     }
     .card{
         display: block;
@@ -227,11 +227,12 @@
                 line-height: 15px;
             }
             .card-price{
+                margin-top: 20px;
                 font-size: 18px;
                 line-height: 18px;
             }
             .card-rating{
-                margin-top: 15px;
+                margin-top: 5px;
                 img{
                     width: 12px;
                     height: 12px;
@@ -282,5 +283,11 @@
 @media(min-width: 1200px){
     .popular-prod__wrp{
         padding: 0 50px;
+    }
+    .popular-prod__wrp .slick-list{
+        width: 102% !important;
+    }
+    .slick-prev{
+        margin-left: 20px;
     }
 }
