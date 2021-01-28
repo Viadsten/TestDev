@@ -78,6 +78,14 @@
        }
        .card-title{
            margin-bottom: 7px;
+           overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+            line-height: 13px;
+            max-height: 26px;
+            height: 26px;
        }
        .card-text{
            margin-bottom: 11px;
@@ -195,6 +203,16 @@
         margin-top: 70px;
         margin: 70px auto 0;
     }
+    .card .card-body .card-title{
+        overflow: hidden;
+         text-overflow: ellipsis;
+         display: -webkit-box;
+         -webkit-box-orient: vertical;
+         -webkit-line-clamp: 3;
+         line-height: 17px;
+         max-height: 49px;
+         height: 49px;
+    }
     .slick-prev{
         margin-left: 10px;
     }
@@ -227,7 +245,7 @@
                 line-height: 15px;
             }
             .card-price{
-                margin-top: 20px;
+                margin-top: 10px;
                 font-size: 18px;
                 line-height: 18px;
             }
