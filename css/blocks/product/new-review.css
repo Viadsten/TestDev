@@ -1,0 +1,157 @@
+.review-button {
+  margin: 0 auto !important;
+  width: 200px;
+  height: 45px;
+  border-radius: 10px !important;
+  border: 1px solid #FD585E !important;
+  color: #FD585E !important;
+  display: block !important;
+  margin-bottom: 40px !important; }
+  .review-button:hover {
+    background-color: #FD585E !important;
+    color: #fff !important; }
+
+.new-review-modal {
+  border-radius: 10px;
+  padding: 20px 15px;
+  position: fixed;
+  top: calc(50vh - 200px);
+  height: 520px;
+  max-width: 840px;
+  left: 5%;
+  box-shadow: 0 0 20px rgba(148, 148, 148, 0.6);
+  z-index: 120;
+  background-color: #fff;
+  width: 90%;
+  max-width: 800px;
+  transition: .3s;
+  transform: scale(0); }
+
+.review-modal--open {
+  transform: scale(1); }
+
+.new-review__close {
+  position: absolute;
+  border: none;
+  top: 15px;
+  opacity: 0.8;
+  right: 20px;
+  background-color: rgba(0, 0, 0, 0); }
+  .new-review__close:hover {
+    opacity: .5; }
+  .new-review__close:active {
+    opacity: .3; }
+
+.new-review__modal-left h4 {
+  font-weight: 400;
+  font-size: 25px; }
+
+.new-review-input {
+  width: 100%;
+  margin: 15px 0 5px;
+  border: 2px solid #e9e9e9 !important; }
+
+.new-review__radio {
+  margin: 20px auto; }
+
+.new-review__select-wrp {
+  margin: 30px 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .new-review__select-wrp p {
+    color: rgba(49, 49, 49, 0.6); }
+  .new-review__select-wrp .select {
+    background: linear-gradient(91.07deg, #FFFFFF 19.2%, #F7F7F7 93.9%);
+    max-width: 150px;
+    box-shadow: inset 15px 15px 32px rgba(241, 241, 241, 0.61);
+    border-radius: 10px;
+    border: 2px solid #e9e9e9;
+    margin: -15px 0 0; }
+    .new-review__select-wrp .select .new-select__list {
+      margin-top: 4px;
+      border-radius: 10px; }
+    .new-review__select-wrp .select .new-select {
+      color: rgba(49, 49, 49, 0.6);
+      padding-left: 40px; }
+
+.new-review__rating-wrp {
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .new-review__rating-wrp p {
+    margin: 0;
+    color: rgba(49, 49, 49, 0.6); }
+  .new-review__rating-wrp .rating-area {
+    margin-top: 0; }
+    .new-review__rating-wrp .rating-area label {
+      margin-top: 0;
+      margin-bottom: 0; }
+
+.new-review__modal-right textarea {
+  padding: 10px;
+  border: 2px solid #e9e9e9;
+  background: linear-gradient(91.07deg, #FFFFFF 19.2%, #F7F7F7 93.9%);
+  box-shadow: inset 15px 15px 32px rgba(241, 241, 241, 0.61);
+  border-radius: 10px;
+  width: 100%;
+  height: 120px;
+  overflow: auto;
+  max-height: 120px;
+  min-height: 120px; }
+
+.new-review__modal-right button {
+  width: 240px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: #FD585E;
+  color: #fff;
+  border: none;
+  font-weight: 400;
+  margin-left: auto;
+  display: block;
+  margin-top: 20px; }
+
+@media (min-width: 900px) {
+  .new-review-modal {
+    padding: 40px;
+    top: calc(50vh - 213px);
+    height: 426px;
+    max-width: 840px;
+    left: calc(50vw - 420px);
+    width: 90%;
+    display: flex;
+    justify-content: space-between; }
+    .new-review-modal .new-review__select-wrp .select .new-select {
+      line-height: 28px; }
+  .new-review__modal-left {
+    width: 38%; }
+    .new-review__modal-left h4 {
+      font-weight: 600; }
+    .new-review__modal-left .new-review__radio {
+      margin-left: 0;
+      margin-top: 35px; }
+    .new-review__modal-left .new-review__select-wrp {
+      margin-top: 45px; }
+      .new-review__modal-left .new-review__select-wrp .select {
+        height: 50px;
+        margin-top: -15px !important; }
+    .new-review__modal-left .new-review__rating-wrp {
+      margin-top: 50px; }
+  .new-review__modal-right {
+    width: 55%; }
+    .new-review__modal-right textarea {
+      padding: 10px;
+      height: 200px;
+      overflow: auto;
+      max-height: 200px;
+      min-height: 200px; }
+    .new-review__modal-right button {
+      margin-top: 40px; }
+  .new-review__rating-wrp .rating-area label {
+    margin-top: 5px; }
+  .new-review__modal-right {
+    margin-top: 53px; }
+  .review-button {
+    margin-bottom: 0 !important; } }
